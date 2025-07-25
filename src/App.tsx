@@ -919,7 +919,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
                               <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                                 <span className="text-white font-bold text-sm">A</span>
                               </div>
-                              <p className="text-gray-700">We follow both <strong>CBSE and State syllabus (Karnataka)</strong> for Classes 8–10.</p>
+                              <p className="text-gray-700">We follow <strong>State Board, CBSE & NCERT Students</strong> for Classes 8–10.</p>
                             </div>
                           </div>
                         </div>
