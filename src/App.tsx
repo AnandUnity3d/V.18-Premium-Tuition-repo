@@ -819,8 +819,8 @@ function App() {
               <div className="relative overflow-hidden rounded-2xl shadow-lg bg-white">
                 <div className="relative h-48">
                   <img 
-                    src="https://images.pexels.com/photos/8471825/pexels-photo-8471825.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                    alt="AR/VR technology and devices used in learning"
+                    src="https://images.pexels.com/photos/8471691/pexels-photo-8471691.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                    alt="Technology-Enabled Teaching"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-600/80 to-transparent"></div>
