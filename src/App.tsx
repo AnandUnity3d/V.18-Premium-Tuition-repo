@@ -32,7 +32,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center mb-4">
-                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium animate-pulse">Karnataka's First AR/VR Tuition Center</span>
+                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium animate-pulse">Karnataka's First Premiun Tuition</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Advanced <span className="text-orange-500 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent animate-pulse">Tech-Enabled Education</span> for every Students
