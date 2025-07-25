@@ -337,8 +337,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
               </div>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4 px-2">Choose Your Plan</h3>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-4">
-                • No fear. No stress. Just happy learning.
-                </p>
+                <p>• No fear. No stress. Just happy learning.</p>
               </div>
             </div>
           </div>
@@ -1186,7 +1185,5 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
 }
 
 export default App;
-  )
-}
   )
 }
