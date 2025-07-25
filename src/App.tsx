@@ -222,6 +222,141 @@ function App() {
         </div>
       </section>
 
+      {/* Why Choose V.18 Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              🌟 Why Choose V.18 Smart Tuition?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover what makes our AR/VR enabled learning approach perfect for every student
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Feature 1 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl">✅</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Learning That's Easy and Fun</h3>
+              </div>
+              <div className="space-y-3 text-gray-600">
+                <p>• No more mugging up or fear of exams</p>
+                <p>• Smart 3D learning makes Science & Math interesting and clear</p>
+                <p>• Kannada & English medium – fully supported</p>
+              </div>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl">✅</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Designed for All Students</h3>
+              </div>
+              <div className="space-y-4 text-gray-600">
+                <div className="flex items-start">
+                  <span className="text-lg mr-2">🧠</span>
+                  <div>
+                    <p className="font-semibold text-gray-800">Intelligent students:</p>
+                    <p className="text-sm">Go beyond textbooks with visual and concept-based learning</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-lg mr-2">📘</span>
+                  <div>
+                    <p className="font-semibold text-gray-800">Average students:</p>
+                    <p className="text-sm">Build strong basics and boost confidence step-by-step</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-lg mr-2">📕</span>
+                  <div>
+                    <p className="font-semibold text-gray-800">Below-average students:</p>
+                    <p className="text-sm">Simple explanations, friendly teachers, and engaging visuals</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl">✅</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Real Teachers + Smart Technology</h3>
+              </div>
+              <div className="space-y-3 text-gray-600">
+                <p>• Not just videos — real teachers explain using smart boards and 3D models</p>
+                <p>• Interactive lessons keep students curious and involved</p>
+              </div>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl">✅</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">For Parents – Transparent Progress</h3>
+              </div>
+              <div className="space-y-3 text-gray-600">
+                <p>• Regular progress updates and parent-teacher meets</p>
+                <p>• Fee payment, test alerts, and performance tracking – all from your mobile</p>
+              </div>
+            </div>
+
+            {/* Feature 5 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl">✅</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Built for Big Dreams</h3>
+              </div>
+              <div className="space-y-3 text-gray-600">
+                <p>• Affordable and focused tuition designed for rural and semi-urban families</p>
+                <p>• Offline and online learning blended together for maximum benefit</p>
+              </div>
+            </div>
+
+            {/* Feature 6 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl">✅</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Exam-Ready Without Pressure</h3>
+              </div>
+              <div className="space-y-3 text-gray-600">
+                <p>• Concept clarity first, then practice — so students enjoy learning and score better</p>
+                <p>• No fear. No stress. Just happy learning.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <div className="bg-white rounded-2xl p-8 shadow-lg max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Ready to Transform Your Child's Learning Experience?
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Join hundreds of students who are already experiencing the future of education
+              </p>
+              <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                Book Free Demo Class
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Programs Section */}
       <section id="programs" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
