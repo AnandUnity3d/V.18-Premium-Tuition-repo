@@ -336,7 +336,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
                 <h3 className="text-xl font-bold text-gray-900">Exam-Ready Without Pressure</h3>
               </div>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4 px-2">Choose Your Plan</h3>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-4">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-4"></p>
                 <p>• No fear. No stress. Just happy learning.</p>
               </div>
             </div>
