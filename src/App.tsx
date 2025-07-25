@@ -560,7 +560,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
                   <Play className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-3xl font-bold mb-4">See Our Technology in Action</h3>
-                <p className="text-xl text-white/90 max-w-2xl mx-auto">Watch how AR/VR transforms traditional learning into an immersive, engaging experience</p>
+                <p className="text-xl text-white/90 max-w-2xl mx-auto">Watch how tech transforms traditional learning into an immersive, engaging experience</p>
               </div>
             </div>
           </div>
