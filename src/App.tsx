@@ -578,7 +578,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
                   <div className="w-16 h-16 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Eye className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">AR/VR Lessons</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">Visual Lessons</h3>
                   <p className="text-gray-600">Feel science with your eyes</p>
                 </div>
               </div>
