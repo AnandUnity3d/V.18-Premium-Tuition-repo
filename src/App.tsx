@@ -1147,7 +1147,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
                 <GraduationCap className="h-8 w-8 text-orange-500" />
                 <span className="ml-2 text-xl font-bold">V.18 Premium Tuition</span>
               </div>
-              <p className="text-gray-400">Bringing AR/VR learning to rural students across Karnataka.</p>
+              <p className="text-gray-400">Next-Level Learning for State Board, CBSE & NCERT Students</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
