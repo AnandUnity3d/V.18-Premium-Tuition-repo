@@ -530,7 +530,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
                 </div>
                 <div className="p-6 bg-white/20 backdrop-blur-sm rounded-lg">
                   <h4 className="font-semibold text-white mb-2">Weekend classes</h4>
-                  <p className="text-white/80">Weekly tests & assignments</p>
+                  <p className="text-white/80">Experiments</p>
                 </div>
               </div>
             </div>
