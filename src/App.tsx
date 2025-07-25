@@ -1055,7 +1055,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white max-w-3xl mx-auto px-6">
                 <h2 className="text-4xl font-bold mb-4">Visit Our Center</h2>
-                <p className="text-xl text-white/90 mb-6">Experience AR/VR learning firsthand at our Jamkhandi location</p>
+                <p className="text-xl text-white/90 mb-6">Experience visual learning firsthand at our Jamkhandi location</p>
                 <div className="flex items-center justify-center text-white/80">
                   <MapPin className="h-5 w-5 mr-2" />
                   <span>Near Govt High School, Jamkhandi, Karnataka</span>
