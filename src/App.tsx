@@ -1185,3 +1185,5 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
 }
 
 export default App;
+  )
+}
