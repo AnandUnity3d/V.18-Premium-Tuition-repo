@@ -38,7 +38,8 @@ function App() {
                 Advanced <span className="text-orange-500 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent animate-pulse">Tech-Enabled Education</span> for every Students
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Transform regular classroom subjects into fun, interactive learning with smart visuals, simple explanations, and real teacher support — for students of all classes in Kannada and English medium.
+                Transform regular classroom subjects into fun, interactive experiences with smart visuals, simple explanations, and guidance from real teachers.
+Designed for students of all classes in Kannada and English medium, fully based on State Board, CBSE, and NCERT syllabus.
               </p>
               <div className="flex items-center mb-8 space-x-6 animate-fade-in">
                 <div className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer group">
