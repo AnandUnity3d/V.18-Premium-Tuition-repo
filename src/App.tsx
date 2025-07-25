@@ -156,7 +156,8 @@ Designed for students of all classes in Kannada and English medium, fully based 
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About V.18</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We believe rural students deserve world-class education. Founded by Anand Biradar, an AR/VR specilist and education innovator.
+              At V.18, we believe that every student deserves access to world-class, future-ready education — no matter where they live.
+Founded by Anand Biradar, a leader in educational innovation and immersive technology, V.18 delivers tech-enabled, interactive learning that makes every subject easy to understand, enjoyable, and effective for all types of learners.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
