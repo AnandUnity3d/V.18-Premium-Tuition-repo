@@ -321,37 +321,37 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Built for Big Dreams</h3>
               </div>
-              <div className="space-y-3 text-gray-600">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 <p>• Affordable and focused tuition designed for rural and semi-urban families</p>
-                <p>• Offline and online learning blended together for maximum benefit</p>
+                <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center text-lg sm:text-2xl font-bold mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
               </div>
             </div>
-
-            {/* Feature 6 */}
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4 px-2">Book Free Demo</h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-4">
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
                   <span className="text-2xl">✅</span>
-                </div>
+                <div className="bg-gradient-to-r from-green-500 to-teal-600 text-white rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center text-lg sm:text-2xl font-bold mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                 <h3 className="text-xl font-bold text-gray-900">Exam-Ready Without Pressure</h3>
               </div>
-              <div className="space-y-3 text-gray-600">
-                <p>• Concept clarity first, then practice — so students enjoy learning and score better</p>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4 px-2">Choose Your Plan</h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-4">
                 <p>• No fear. No stress. Just happy learning.</p>
               </div>
             </div>
           </div>
-
+                <div className="bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center text-lg sm:text-2xl font-bold mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
           {/* Call to Action */}
           <div className="text-center mt-16">
-            <div className="bg-white rounded-2xl p-8 shadow-lg max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4 px-2">Start Learning</h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-4">
                 Ready to Transform Your Child's Learning Experience?
               </h3>
               <p className="text-gray-600 mb-6">
                 Join hundreds of students who are already experiencing the future of education
-              </p>
-              <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+            <div className="text-center mt-8 sm:mt-12 px-4">
+              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg w-full sm:w-auto">
                 Book Free Demo Class
               </button>
             </div>
