@@ -232,7 +232,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
               🌟 Why Choose V.18 Smart Tuition?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover what makes our AR/VR enabled learning approach perfect for every student
+              Discover what makes our tech enabled learning approach perfect for every student
             </p>
           </div>
 
@@ -247,8 +247,8 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
               </div>
               <div className="space-y-3 text-gray-600">
                 <p>• No more mugging up or fear of exams</p>
-                <p>• Smart 3D learning makes Science & Math interesting and clear</p>
-                <p>• Kannada & English medium – fully supported</p>
+                <p>• Deep understanding replaces rote memorization</p>
+                <p>• Students build curiosity and real interest in subjects</p>
               </div>
             </div>
 
