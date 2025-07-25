@@ -1026,7 +1026,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
                 <Phone className="h-8 w-8 text-orange-500" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Still Have Questions?</h3>
-              <p className="text-gray-600 mb-6">Our team is here to help you understand how AR/VR learning can benefit your child</p>
+              <p className="text-gray-600 mb-6">Our team is here to help you understand how visual learning can benefit your child</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium flex items-center justify-center">
                   <Phone className="mr-2 h-4 w-4" />
