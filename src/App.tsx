@@ -684,7 +684,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white max-w-3xl mx-auto px-6">
                 <h3 className="text-4xl font-bold mb-4">Join the Future of Learning</h3>
-                <p className="text-xl text-white/90 mb-6">Be among the first students to experience AR/VR education in Karnataka</p>
+                <p className="text-xl text-white/90 mb-6">Be among the first students to experience tech enabled education in Karnataka</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button className="bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-lg hover:bg-white/30 transition-colors font-medium">
                     Book Free Demo
