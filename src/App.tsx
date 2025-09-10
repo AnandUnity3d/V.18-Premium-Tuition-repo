@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Users, Award, BookOpen, Smartphone, Calendar, MapPin, Phone, Mail, Facebook, Instagram, Youtube, Twitter, GraduationCap, Brain } from 'lucide-react';
+import { Play, Users, Award, BookOpen, Smartphone, Calendar, MapPin, Phone, Mail, Facebook, Instagram, Youtube, Twitter, GraduationCap, Brain, ArrowRight } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 
 function App() {
