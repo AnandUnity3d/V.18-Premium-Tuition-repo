@@ -1,7 +1,10 @@
 import React from 'react';
-import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom } from 'lucide-react';
+import { Play, Users, Award, BookOpen, Smartphone, Heart, CheckCircle, Star, ArrowRight, Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Youtube, Zap, Target, TrendingUp, Shield, Globe, Lightbulb } from 'lucide-react';
+import BookingModal from './components/BookingModal';
 
 function App() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = React.useState(false);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -41,7 +44,10 @@ function App() {
                 Transform regular classroom subjects into fun, interactive experiences with smart visuals, simple explanations, and guidance from real teachers.
 Designed for students of all classes in Kannada and English medium, fully based on State Board, CBSE, and NCERT syllabus.
               </p>
-              <div className="flex items-center mb-8 space-x-6 animate-fade-in">
+                <button 
+                  onClick={() => setIsBookingModalOpen(true)}
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
+                >
                 <div className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer group">
                   <Users className="h-5 w-5 mr-2" />
                   <span className="group-hover:scale-105 transition-transform">Real Teachers</span>
@@ -351,7 +357,10 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
               <p className="text-gray-600 mb-6">
                 Join hundreds of students who are already experiencing the future of education
               </p>
-              <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+              <button 
+                onClick={() => setIsBookingModalOpen(true)}
+                className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-green-600 hover:to-blue-600 transition-all transform hover:scale-105 shadow-lg"
+              >
                 Book Free Demo Class
               </button>
             </div>
@@ -1180,6 +1189,12 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
           </div>
         </div>
       </footer>
+
+      {/* Booking Modal */}
+      <BookingModal 
+        isOpen={isBookingModalOpen} 
+        onClose={() => setIsBookingModalOpen(false)} 
+      />
     </div>
   );
 }
