@@ -40,15 +40,11 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const locations = [
-    'Bangalore Rural',
-    'Ramanagara',
-    'Tumkur',
-    'Kolar',
-    'Chikkaballapur',
-    'Hassan',
-    'Mandya',
-    'Mysore Rural',
-    'Other'
+    'Jamkhandi',
+    'Athani',
+    'Mudhol',
+    'Badami',
+    'Guledaguda',
   ];
 
   const subjects = [
