@@ -60,7 +60,7 @@ Designed for students of all classes in Kannada and English medium, fully based 
                   <Smartphone className="h-5 w-5 mr-2" />
                   <span className="group-hover:scale-105 transition-transform">Mobile App</span>
                 </div>
-              </div>
+              </button>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 hover:scale-105 hover:shadow-lg transition-all duration-300 font-medium flex items-center justify-center group">
                   Book a Free Demo
