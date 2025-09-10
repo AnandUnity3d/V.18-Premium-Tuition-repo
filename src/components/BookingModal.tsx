@@ -45,6 +45,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
     'Mudhol',
     'Badami',
     'Guledaguda',
+    'Haveri'
   ];
 
   const subjects = [
