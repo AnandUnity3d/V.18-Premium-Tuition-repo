@@ -1191,6 +1191,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
         isOpen={isBookingModalOpen} 
         onClose={() => setIsBookingModalOpen(false)} 
       />
+      </nav>
     </div>
   );
 }
