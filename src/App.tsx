@@ -1,6 +1,8 @@
+import BookingModal from './components/BookingModal';
 import React from 'react';
 import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom } from 'lucide-react';
 
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 function App() {
   return (
     <div className="min-h-screen bg-white">
@@ -18,7 +20,9 @@ function App() {
               <a href="#technology" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Technology</a>
               <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
               <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
-            </nav>
+              onClick={() => setIsBookingModalOpen(true)}
+              onClick={() => setIsBookingModalOpen(true)}
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
             <button className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors font-medium">
               Book Free Demo
             </button>
@@ -350,7 +354,8 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
               </h3>
               <p className="text-gray-600 mb-6">
                 Join hundreds of students who are already experiencing the future of education
-              </p>
+                onClick={() => setIsBookingModalOpen(true)}
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
               <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
                 Book Free Demo Class
               </button>
@@ -1180,8 +1185,13 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
           </div>
         </div>
       </footer>
+
+      {/* Booking Modal */}
+      <BookingModal 
+        isOpen={isBookingModalOpen} 
+        onClose={() => setIsBookingModalOpen(false)} 
+      />
     </div>
   );
 }
-
-export default App;
+import { Menu, X, Star, Users, Award, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
