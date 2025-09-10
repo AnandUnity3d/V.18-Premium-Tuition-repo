@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { X, Calendar, MapPin, User, Phone, Mail, GraduationCap, Clock } from 'lucide-react';
-import emailjs from '@emailjs/browser';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -89,33 +88,13 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    // Simulate form submission
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    
     try {
-      // Initialize EmailJS (you'll need to set up your EmailJS account)
-      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
-
-      const templateParams = {
-        to_email: 'anandbiradar002@gmail.com',
-        student_name: formData.studentName,
-        parent_name: formData.parentName,
-        phone: formData.phone,
-        email: formData.email,
-        class: formData.class,
-        medium: formData.medium,
-        subjects: formData.subjects.join(', '),
-        visit_date: formData.visitDate,
-        visit_time: formData.visitTime,
-        location: formData.location,
-        address: formData.address,
-        additional_info: formData.additionalInfo,
-        submission_date: new Date().toLocaleString()
-      };
-
-      await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-        templateParams
-      );
-
+      // Here you would normally send the data to your backend
+      console.log('Booking data:', formData);
+      
       setSubmitStatus('success');
       setTimeout(() => {
         onClose();
