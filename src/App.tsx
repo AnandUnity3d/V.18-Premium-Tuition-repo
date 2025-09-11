@@ -42,7 +42,7 @@ function App() {
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Transform regular classroom subjects into fun, interactive experiences with smart visuals, simple explanations, and guidance from real teachers.
-Designed for students of all classes in Kannada and English medium, fully based on State Board, CBSE, and NCERT syllabus.
+Designed for students of all classes are fully based on State Board and CBSE syllabus.
               </p>
               <div className="flex items-center mb-8 space-x-6 animate-fade-in">
                 <div className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer group">
