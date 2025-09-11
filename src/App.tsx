@@ -70,7 +70,7 @@ Designed for students of all classes are fully based on State Board and CBSE syl
               </div>
               <div className="mt-6 flex items-center text-gray-600 hover:text-orange-600 transition-colors duration-300 cursor-pointer">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>First Center: Jamkhandi, Karnataka</span>
+                <span>First Branch: Jamkhandi, Karnataka</span>
               </div>
             </div>
             <div className="relative group">
