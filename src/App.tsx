@@ -172,7 +172,7 @@ Designed for students of all classes are fully based on State Board and CBSE syl
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">AR/VR & 3D Learning</h4>
+                    <h4 className="font-semibold text-gray-900">3D enabled Learning</h4>
                     <p className="text-gray-600">Interactive visualization for complex concepts</p>
                   </div>
                 </div>
