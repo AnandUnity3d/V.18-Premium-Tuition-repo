@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom } from 'lucide-react';
+import BookingModal from './components/BookingModal';
 
 function App() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -19,7 +22,7 @@ function App() {
               <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
               <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
             </nav>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors font-medium">
+            <button onClick={() => setIsBookingModalOpen(true)} className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors font-medium">
               Book Free Demo
             </button>
           </div>
@@ -56,7 +59,7 @@ Designed for students of all classes in Kannada and English medium, fully based 
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 hover:scale-105 hover:shadow-lg transition-all duration-300 font-medium flex items-center justify-center group">
+                <button onClick={() => setIsBookingModalOpen(true)} className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 hover:scale-105 hover:shadow-lg transition-all duration-300 font-medium flex items-center justify-center group">
                   Book a Free Demo
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </button>
@@ -351,7 +354,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
               <p className="text-gray-600 mb-6">
                 Join hundreds of students who are already experiencing the future of education
               </p>
-              <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+              <button onClick={() => setIsBookingModalOpen(true)} className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
                 Book Free Demo Class
               </button>
             </div>
@@ -686,7 +689,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
                 <h3 className="text-4xl font-bold mb-4">Join the Future of Learning</h3>
                 <p className="text-xl text-white/90 mb-6">Be among the first students to experience tech enabled education in Karnataka</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-lg hover:bg-white/30 transition-colors font-medium">
+                  <button onClick={() => setIsBookingModalOpen(true)} className="bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-lg hover:bg-white/30 transition-colors font-medium">
                     Book Free Demo
                   </button>
                   <button className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
@@ -1032,7 +1035,7 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
                   <Phone className="mr-2 h-4 w-4" />
                   Call Us: +91 8123144616
                 </button>
-                <button className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium">
+                <button onClick={() => setIsBookingModalOpen(true)} className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium">
                   Book Free Demo
                 </button>
               </div>
@@ -1180,6 +1183,12 @@ Founded by Anand Biradar, a leader in educational innovation and immersive techn
           </div>
         </div>
       </footer>
+
+      {/* Booking Modal */}
+      <BookingModal 
+        isOpen={isBookingModalOpen} 
+        onClose={() => setIsBookingModalOpen(false)} 
+      />
     </div>
   );
 }
