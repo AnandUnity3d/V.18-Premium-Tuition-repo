@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, User, Phone, Mail, BookOpen, Calendar } from 'lucide-react';
+import { X, User, Phone, Mail, BookOpen, Calendar, MapPin } from 'lucide-react';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -13,6 +13,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
     phone: '',
     email: '',
     class: '',
+    location: '',
     preferredDate: '',
     preferredTime: ''
   });
@@ -29,6 +30,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
       phone: '',
       email: '',
       class: '',
+      location: '',
       preferredDate: '',
       preferredTime: ''
     });
@@ -137,6 +139,31 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 <option value="8">Class 8</option>
                 <option value="9">Class 9</option>
                 <option value="10">Class 10</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                <MapPin className="w-4 h-4 inline mr-2" />
+                Nearest Location *
+              </label>
+              <select
+                name="location"
+                value={formData.location}
+                onChange={handleChange}
+                required
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              >
+                <option value="">Select Nearest Location</option>
+                <option value="Bangalore Rural">Bangalore Rural</option>
+                <option value="Mysore">Mysore</option>
+                <option value="Mandya">Mandya</option>
+                <option value="Hassan">Hassan</option>
+                <option value="Tumkur">Tumkur</option>
+                <option value="Kolar">Kolar</option>
+                <option value="Chikkaballapur">Chikkaballapur</option>
+                <option value="Ramanagara">Ramanagara</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
