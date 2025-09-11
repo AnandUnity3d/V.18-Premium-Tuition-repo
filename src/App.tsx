@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import { Play, Star, Users, Award, MapPin, Phone, Mail, Menu, X, GraduationCap, BookOpen, Smartphone, Heart, CheckCircle, ArrowRight, Clock, Facebook, Twitter, Instagram, Youtube, Zap, Target, TrendingUp, Shield, Globe, Lightbulb } from 'lucide-react';
-import BookingModal from './components/BookingModal';
 
 function App() {
-  const [isBookingModalOpen, setIsBookingModalOpen] = React.useState(false);
-
-  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -30,12 +26,6 @@ function App() {
               <a href="#features" className="text-gray-700 hover:text-blue-600 transition-colors">Features</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
               <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
-              <button
-                onClick={() => setIsBookingModalOpen(true)}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105"
-              >
-                Book Demo
-              </button>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -55,12 +45,6 @@ function App() {
                 <a href="#features" className="text-gray-700 hover:text-blue-600 transition-colors">Features</a>
                 <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
                 <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
-                <button
-                  onClick={() => setIsBookingModalOpen(true)}
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
-                >
-                  Book Demo
-                </button>
               </div>
             </div>
           )}
@@ -82,13 +66,6 @@ function App() {
               Learn in Kannada and English medium with cutting-edge technology at affordable prices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={() => setIsBookingModalOpen(true)}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 font-semibold text-lg flex items-center justify-center space-x-2"
-              >
-                <Play className="w-5 h-5" />
-                <span>Book Free Demo</span>
-              </button>
               <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-all font-semibold text-lg">
                 Learn More
               </button>
@@ -253,12 +230,6 @@ function App() {
           </div>
 
           <div className="text-center mt-12">
-            <button
-              onClick={() => setIsBookingModalOpen(true)}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-4 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 font-semibold text-lg"
-            >
-              Book Your Free Demo Today
-            </button>
           </div>
         </div>
       </section>
@@ -286,17 +257,6 @@ function App() {
         </div>
       </footer>
 
-      {/* Booking Modal */}
-      <BookingModal 
-        isOpen={isBookingModalOpen} 
-        onClose={() => setIsBookingModalOpen(false)} 
-      />
-
-      {/* Booking Modal */}
-      <BookingModal 
-        isOpen={isBookingModalOpen} 
-        onClose={() => setIsBookingModalOpen(false)} 
-      />
     </div>
   );
 }
