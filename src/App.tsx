@@ -829,10 +829,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                       <span className="text-white">Fee Range: ₹1000 – ₹1,500/month</span>
                     </div>
                   </div> 
-                  <div className="bg-orange-500/80 backdrop-blur-sm rounded-lg p-6 mb-8">
-                    <h4 className="font-bold text-white mb-2">Special Offer</h4>
-                    <p className="text-white/90">First 25 Students: ₹100 Discount + Free Notes</p>
-                  </div>
+                  
                   <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
                     Apply Now
                   </button>
