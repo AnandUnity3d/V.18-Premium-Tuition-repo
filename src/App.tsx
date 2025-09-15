@@ -540,62 +540,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
         </div>
       </section>
 
-      {/* Technology Section */}
-      <section id="technology" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Technology: Learning Meets Innovation</h2>
-            <p className="text-xl text-gray-600">Experience the future of education with our cutting-edge tools</p>
-          </div>
-          
-          {/* Technology Hero Image */}
-          <div className="mb-16 relative overflow-hidden rounded-3xl shadow-2xl">
-            <img 
-              src="https://images.pexels.com/photos/5212361/pexels-photo-5212361.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-              alt="Advanced VR learning technology in classroom"
-              className="w-full h-96 object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-orange-600/80"></div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white">
-                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Play className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="text-3xl font-bold mb-4">See Our Technology in Action</h3>
-                <p className="text-xl text-white/90 max-w-2xl mx-auto">Watch how tech transforms traditional learning into an immersive, engaging experience</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <BookOpen className="w-6 h-6 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Class 8-10</h3>
-              <p className="text-gray-600 mb-4">Foundation building with interactive 3D models and AR experiences</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Mathematics & Science</li>
-                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />English & Kannada</li>
-                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Social Studies</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <GraduationCap className="w-6 h-6 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3">PUC 1</h3>
-              <p className="text-gray-600 mb-4">Advanced learning with immersive VR technology for pre-university</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Physics, Chemistry, Biology</li>
-                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Mathematics</li>
-                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />English & Kannada</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
                 <Target className="w-6 h-6 text-indigo-600" />
               </div>
               <h3 className="text-xl font-semibold mb-3">PUC 2</h3>
