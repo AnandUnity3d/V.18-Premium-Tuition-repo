@@ -179,7 +179,7 @@ Designed for students of all classes are fully based on State Board and CBSE syl
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">Kannada + English Support</h4>
+                    <h4 className="font-semibold text-gray-900">Local languages + English Support</h4>
                     <p className="text-gray-600">Bilingual education for better understanding</p>
                   </div>
                 </div>
