@@ -26,32 +26,17 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
           </div>
 
           <div className="relative bg-gray-900 rounded-lg overflow-hidden aspect-video">
-            {/* Video placeholder with play button */}
-            <div className="relative w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-900 to-purple-900">
-              <img
-                src="/src/cc.jpeg"
-                alt="Technology Demo Preview"
-                className="w-full h-full object-cover opacity-80"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button className="bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-6 transition-all duration-300 transform hover:scale-110 shadow-2xl">
-                  <Play className="w-12 h-12 text-blue-600 ml-1" />
-                </button>
-              </div>
-            </div>
-            
-            {/* Uncomment below for actual video playback */}
-            {/*
+            {/* Sample video with controls */}
             <video
               controls
               autoPlay
               className="w-full h-full"
-              poster="/src/cc.jpeg"
+              poster="https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             >
-              <source src="/path-to-your-video.mp4" type="video/mp4" />
+              <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            */}
           </div>
 
           <div className="mt-4 text-center">
