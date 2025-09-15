@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target, Building, X, User } from 'lucide-react';
 import BookingModal from './components/BookingModal';
-import VideoModal from './components/VideoModal';
 
 function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
 
   return (
@@ -354,13 +352,11 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 Ready to Transform Your Child's Learning Experience?
               </h3>
               <p className="text-gray-600 mb-6">
-                onClick={() => setIsVideoModalOpen(true)}
-                className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors cursor-pointer"
+                Join hundreds of students who are already experiencing the future of education
               </p>
-                <Eye className="w-5 h-5 mr-2" />
+              <button onClick={() => setIsBookingModalOpen(true)} className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
                 Book Free Demo Class
               </button>
-            </div>
             </div>
           </div>
         </div>
@@ -1383,7 +1379,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
       </footer>
 
       {/* Booking Modal */}
-      <VideoModal isOpen={isVideoModalOpen} onClose={() => setIsVideoModalOpen(false)} />
       <BookingModal 
         isOpen={isBookingModalOpen} 
         onClose={() => setIsBookingModalOpen(false)} 
