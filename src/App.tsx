@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target, Building, X } from 'lucide-react';
+import { Play, Users, BookOpen, Award, MapPin, Phone, Mail, Clock, CheckCircle, Building, Calendar, User, X, Star } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 
 function App() {
@@ -861,6 +861,129 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Teachers Profiles */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Expert Teachers</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our experienced faculty combines traditional teaching excellence with cutting-edge AR/VR technology
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Dr. Priya Sharma",
+                subject: "Mathematics & Physics",
+                experience: "12 Years",
+                qualification: "M.Sc Physics, B.Ed",
+                specialization: "3D Geometry & Quantum Physics",
+                image: "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400",
+                achievements: ["Best Teacher Award 2023", "AR/VR Certified Educator"]
+              },
+              {
+                name: "Prof. Rajesh Kumar",
+                subject: "Chemistry & Biology",
+                experience: "15 Years",
+                qualification: "M.Sc Chemistry, Ph.D",
+                specialization: "Organic Chemistry & Cell Biology",
+                image: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=400",
+                achievements: ["Research Publication Author", "VR Lab Specialist"]
+              },
+              {
+                name: "Mrs. Sunita Patil",
+                subject: "English & Literature",
+                experience: "10 Years",
+                qualification: "M.A English, B.Ed",
+                specialization: "Interactive Language Learning",
+                image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400",
+                achievements: ["Digital Teaching Expert", "Multilingual Educator"]
+              },
+              {
+                name: "Mr. Arun Desai",
+                subject: "Computer Science",
+                experience: "8 Years",
+                qualification: "B.Tech CSE, M.Tech",
+                specialization: "AR/VR Development & Programming",
+                image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400",
+                achievements: ["Tech Innovation Award", "AR/VR Content Creator"]
+              },
+              {
+                name: "Dr. Kavitha Reddy",
+                subject: "Social Studies & History",
+                experience: "14 Years",
+                qualification: "M.A History, Ph.D",
+                specialization: "Virtual Historical Tours",
+                image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
+                achievements: ["Cultural Heritage Expert", "VR History Pioneer"]
+              }
+            ].map((teacher, index) => (
+              <div key={index} className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src={teacher.image} 
+                    alt={teacher.name}
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    {teacher.experience}
+                  </div>
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{teacher.name}</h3>
+                  <p className="text-blue-600 font-semibold mb-2">{teacher.subject}</p>
+                  <p className="text-gray-600 text-sm mb-3">{teacher.qualification}</p>
+                  
+                  <div className="mb-4">
+                    <h4 className="font-semibold text-gray-800 mb-1">Specialization:</h4>
+                    <p className="text-gray-600 text-sm">{teacher.specialization}</p>
+                  </div>
+                  
+                  <div className="space-y-1">
+                    <h4 className="font-semibold text-gray-800">Achievements:</h4>
+                    {teacher.achievements.map((achievement, idx) => (
+                      <div key={idx} className="flex items-center text-sm text-gray-600">
+                        <Star className="w-3 h-3 text-yellow-500 mr-2 flex-shrink-0" />
+                        {achievement}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">Join Our Teaching Excellence</h3>
+              <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+                Our teachers undergo continuous training in AR/VR technologies and modern pedagogical methods to provide the best learning experience.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4 text-sm">
+                <div className="flex items-center">
+                  <CheckCircle className="w-4 h-4 mr-2" />
+                  AR/VR Certified
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="w-4 h-4 mr-2" />
+                  Multilingual Support
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="w-4 h-4 mr-2" />
+                  Personalized Teaching
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="w-4 h-4 mr-2" />
+                  Regular Training
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
