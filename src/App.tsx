@@ -733,7 +733,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   <div className="space-y-4 mb-8">
                     <div className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
-                      <span className="text-white">Open for Class 8–10</span>
+                      <span className="text-white">Open for Class 8–12</span>
                     </div>
                     <div className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
@@ -741,12 +741,12 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     </div>
                     <div className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
-                      <span className="text-white">Fee Range: ₹1,000 – ₹1,400/month</span>
+                      <span className="text-white">Fee Range: ₹1000 – ₹1,500/month</span>
                     </div>
                   </div>
                   <div className="bg-orange-500/80 backdrop-blur-sm rounded-lg p-6 mb-8">
                     <h4 className="font-bold text-white mb-2">Special Offer</h4>
-                    <p className="text-white/90">First 25 Students: ₹300 Discount + Free Books</p>
+                    <p className="text-white/90">First 25 Students: ₹100 Discount + Free Notes</p>
                   </div>
                   <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
                     Apply Now
