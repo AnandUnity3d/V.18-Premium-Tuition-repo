@@ -752,7 +752,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-lg p-4">
                   <CheckCircle className="h-5 w-5 text-green-400 mr-3 flex-shrink-0" />
-                  <span className="text-white">3D AR modules</span>
+                  <span className="text-white">3D modules</span>
                 </div>
                 <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-lg p-4">
                   <CheckCircle className="h-5 w-5 text-green-400 mr-3 flex-shrink-0" />
