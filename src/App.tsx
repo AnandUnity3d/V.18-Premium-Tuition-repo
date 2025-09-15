@@ -814,78 +814,9 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                  {/* <h3 className="text-2xl font-bold text-white mb-6">Admission Details</h3> */}
-                  {/*  <div className="space-y-4 mb-8">
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
-                      <span className="text-white">Open for Class 8–12</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
-                      <span className="text-white">FREE Demo Class</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
-                      <span className="text-white">Fee Range: ₹1000 – ₹1,500/month</span>
-                    </div>
-                  </div> */}
-                 {/*  <div className="bg-orange-500/80 backdrop-blur-sm rounded-lg p-6 mb-8">
-                    <h4 className="font-bold text-white mb-2">Special Offer</h4>
-                    <p className="text-white/90">First 25 Students: ₹100 Discount + Free Notes</p>
-                  </div> */}
-                  {/*  <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
-                    Apply Now
-                  </button> */}
                 </div>
               </div>
             </div>
-          
-            {/* <div className="relative">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="Students in admission process and orientation"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                  <h3 className="text-2xl font-bold text-white mb-6">Admission Process</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-start">
-                      <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1 flex-shrink-0">1</div>
-                      <div>
-                        <h4 className="font-semibold text-white">Diagnostic Test</h4>
-                        <p className="text-white/80 text-sm">Assessment of current knowledge level</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1 flex-shrink-0">2</div>
-                      <div>
-                        <h4 className="font-semibold text-white">Parent Orientation</h4>
-                        <p className="text-white/80 text-sm">Understanding our teaching methodology</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1 flex-shrink-0">3</div>
-                      <div>
-                        <h4 className="font-semibold text-white">Personal Academic Plan</h4>
-                        <p className="text-white/80 text-sm">Customized learning path for each student</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-6 p-4 bg-white/20 backdrop-blur-sm rounded-lg">
-                    <div className="text-center">
-                      <div className="flex items-center justify-center mb-2">
-                        <Zap className="h-5 w-5 text-yellow-400 mr-2" />
-                        <span className="text-yellow-400 font-bold text-lg">LIMITED SEATS AVAILABLE</span>
-                        <Zap className="h-5 w-5 text-yellow-400 ml-2" />
-                      </div>
-                      <p className="text-white font-medium">Only 25 seats per batch - Secure your spot today!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>*/}
           </div>
         </div>
       </section>
