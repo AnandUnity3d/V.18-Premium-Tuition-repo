@@ -838,7 +838,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   </button>
                 </div>*/}
               </div> 
-            </div> 
+            </section>
             {/* <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-lg">
                 <img 
