@@ -1201,7 +1201,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             </div>
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gray-900 text-white">
@@ -1257,7 +1257,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </div>
               </div>
             </div>
-            <div className="relative">
+            {/* <div className="relative">
               <div className="relative overflow-hidden rounded-2xl">
                 <img 
                   src="https://images.pexels.com/photos/5212663/pexels-photo-5212663.jpeg?auto=compress&cs=tinysrgb&w=800" 
@@ -1295,7 +1295,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   </form>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
