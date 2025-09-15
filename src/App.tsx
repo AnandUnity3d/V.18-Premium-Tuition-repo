@@ -824,11 +824,9 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                       <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
                       <span className="text-white">FREE Demo Class</span>
                     </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
-                      <span className="text-white">Fee Range: ₹1000 – ₹1,500/month</span>
-                    </div>
+                    
                   </div> 
+  
                 </div>
               </div>
             </div>
