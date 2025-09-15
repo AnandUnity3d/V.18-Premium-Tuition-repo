@@ -207,7 +207,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                       <div className="text-white/90 text-sm">Classes Covered</div>
                     </div>
                     <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
-                      <div className="text-2xl font-bold text-blue-300 mb-1">3</div>
+                      <div className="text-2xl font-bold text-blue-300 mb-1">7</div>
                       <div className="text-white/90 text-sm">Core Subjects</div>
                     </div>
                     <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
