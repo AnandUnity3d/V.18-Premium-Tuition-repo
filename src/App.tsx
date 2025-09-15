@@ -833,9 +833,9 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <h4 className="font-bold text-white mb-2">Special Offer</h4>
                     <p className="text-white/90">First 25 Students: ₹100 Discount + Free Notes</p>
                   </div>
-                  <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
+                  {/*  <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
                     Apply Now
-                  </button> 
+                  </button> */}
                 </div>
               </div>
             </div>
