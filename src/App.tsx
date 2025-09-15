@@ -1225,11 +1225,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               </div>
             </div>
           </div>
-          
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
-            <p className="text-xl text-gray-300">Got questions? Want to visit our center?</p>
-          </div>
+        
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-bold mb-6">V.18 Premium Tuition </h3>
