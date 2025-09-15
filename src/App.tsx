@@ -42,7 +42,7 @@ function App() {
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Transform regular classroom subjects into fun, interactive experiences with smart visuals, simple explanations, and guidance from real teachers.
-Designed for students of all classes are fully based on State Board and CBSE syllabus.
+Designed for students of all classes are fully based on State Board, CBSE and ICSE syllabus.
               </p>
               <div className="flex items-center mb-8 space-x-6 animate-fade-in">
                 <div className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer group">
@@ -921,7 +921,7 @@ Designed for students of all classes are fully based on State Board and CBSE syl
                               <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                                 <span className="text-white font-bold text-sm">A</span>
                               </div>
-                              <p className="text-gray-700">We follow <strong>State Board, CBSE & NCERT Students</strong> for Classes 8–10.</p>
+                              <p className="text-gray-700">We follow <strong>State Board, CBSE & ICSE Students</strong> for Classes 8–12.</p>
                             </div>
                           </div>
                         </div>
@@ -1149,7 +1149,7 @@ Designed for students of all classes are fully based on State Board and CBSE syl
                 <GraduationCap className="h-8 w-8 text-orange-500" />
                 <span className="ml-2 text-xl font-bold">V.18 Premium Tuition</span>
               </div>
-              <p className="text-gray-400">Next-Level Learning for State Board, CBSE & NCERT Students</p>
+              <p className="text-gray-400">Next-Level Learning for State Board, CBSE and ICSE Students</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
