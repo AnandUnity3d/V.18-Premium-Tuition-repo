@@ -829,10 +829,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                       <span className="text-white">Fee Range: ₹1000 – ₹1,500/month</span>
                     </div>
                   </div> 
-                  
-                  <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
-                    Apply Now
-                  </button>
                 </div>
               </div>
             </div>
