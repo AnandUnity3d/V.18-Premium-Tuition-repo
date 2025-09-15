@@ -804,10 +804,10 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             </div>
           </div>
           
-      <div className="grid md:grid-cols-2 gap-12">
+          {/*  <div className="grid md:grid-cols-2 gap-12">
             <div className="relative">
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
