@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, Users, BookOpen, Award, MapPin, Phone, Mail, Clock, CheckCircle, Building, Calendar, User, X, Star } from 'lucide-react';
+import { Play, Star, Users, BookOpen, Award, CheckCircle, Phone, Mail, MapPin, Clock, Calendar, ArrowRight, Zap, Target, TrendingUp, Globe, Smartphone, Monitor, Headphones, User, GraduationCap } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 
 function App() {
