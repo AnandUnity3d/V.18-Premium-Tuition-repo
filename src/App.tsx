@@ -941,18 +941,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               </div>
             ))}
           </div>
-
-          <div className="text-center mt-8 sm:mt-12">
-            <p className="text-sm sm:text-base text-gray-600 mb-4">
-              Can't find a branch near you? We're expanding rapidly!
-            </p>
-            <button
-              onClick={() => setIsBookingModalOpen(true)}
-              className="bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              Request New Branch
-            </button>
-          </div>
         </div>
       </section>
 
