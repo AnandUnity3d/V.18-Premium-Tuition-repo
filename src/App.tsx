@@ -196,7 +196,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <img 
-                  src="/src/bb.png" 
+                  src="/src/cc.jpeg" 
                   alt="Students engaged in modern technology-based learning"
                   className="w-full h-80 object-cover"
                 />
