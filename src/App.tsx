@@ -38,7 +38,7 @@ function App() {
                 <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium animate-pulse">Karnataka's First Premiun Tuition</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Advanced <span className="text-orange-500 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent animate-pulse">Tech-Enabled Education</span> for every Students
+                Advanced <span className="text-orange-500 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent animate-pulse">Tech-Enabled Education</span> for every students
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Transform regular classroom subjects into fun, interactive experiences with smart visuals, simple explanations, and guidance from real teachers.
