@@ -803,13 +803,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               </div>
             </div>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="relative">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg">
-              </div>
-            </div>
-          </div>
         </div> 
       </section>
 
