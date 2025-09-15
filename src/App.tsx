@@ -246,7 +246,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
                   <span className="text-2xl">✅</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Learning That's Easy and Fun</h3>
+                <h3 className="text-xl font-bold text-gray-900">Learning is Easy and Fun</h3>
               </div>
               <div className="space-y-3 text-gray-600">
                 <p>• No more mugging up or fear of exams</p>
