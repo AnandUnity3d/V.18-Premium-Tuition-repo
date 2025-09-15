@@ -157,14 +157,10 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
               >
                 <option value="">Select Nearest Location</option>
-                <option value="Bangalore Rural">Bangalore Rural</option>
-                <option value="Mysore">Mysore</option>
-                <option value="Mandya">Mandya</option>
-                <option value="Hassan">Hassan</option>
-                <option value="Tumkur">Tumkur</option>
-                <option value="Kolar">Kolar</option>
-                <option value="Chikkaballapur">Chikkaballapur</option>
-                <option value="Ramanagara">Ramanagara</option>
+                <option value="Jamkandi">Jamkandi</option>
+                <option value="Athani">Athani</option>
+                <option value="Harugeri">Harugeri</option>
+                <option value="Badami">Badami</option>
                 <option value="Other">Other</option>
               </select>
             </div>
