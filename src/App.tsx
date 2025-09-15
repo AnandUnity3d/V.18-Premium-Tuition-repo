@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom } from 'lucide-react';
+import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 
 function App() {
@@ -567,74 +567,70 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl transform rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
-              <div className="relative bg-white rounded-2xl p-6 shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/5212320/pexels-photo-5212320.jpeg?auto=compress&cs=tinysrgb&w=400" 
-                  alt="AR/VR learning experience"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Eye className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Visual Lessons</h3>
-                  <p className="text-gray-600">Feel science with your eyes</p>
-                </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <BookOpen className="w-6 h-6 text-blue-600" />
               </div>
+              <h3 className="text-xl font-semibold mb-3">Class 8-10</h3>
+              <p className="text-gray-600 mb-4">Foundation building with interactive 3D models and AR experiences</p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Mathematics & Science</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />English & Kannada</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Social Studies</li>
+              </ul>
             </div>
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl transform -rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
-              <div className="relative bg-white rounded-2xl p-6 shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&w=400" 
-                  alt="Smart board interactive learning"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Brain className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Smart Boards</h3>
-                  <p className="text-gray-600">Interactive 3D videos</p>
-                </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                <GraduationCap className="w-6 h-6 text-purple-600" />
               </div>
+              <h3 className="text-xl font-semibold mb-3">PUC 1</h3>
+              <p className="text-gray-600 mb-4">Advanced learning with immersive VR technology for pre-university</p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Physics, Chemistry, Biology</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Mathematics</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />English & Kannada</li>
+              </ul>
             </div>
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl transform rotate-2 group-hover:rotate-0 transition-transform duration-300"></div>
-              <div className="relative bg-white rounded-2xl p-6 shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=400" 
-                  alt="Mobile app for learning"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Smartphone className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Mobile App</h3>
-                  <p className="text-gray-600">Progress tracking & reminders</p>
-                </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                <Target className="w-6 h-6 text-indigo-600" />
               </div>
+              <h3 className="text-xl font-semibold mb-3">PUC 2</h3>
+              <p className="text-gray-600 mb-4">Exam preparation with comprehensive VR simulations and practice</p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Advanced PCM/PCB</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Competitive Exam Prep</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Career Guidance</li>
+              </ul>
             </div>
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl transform -rotate-2 group-hover:rotate-0 transition-transform duration-300"></div>
-              <div className="relative bg-white rounded-2xl p-6 shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=400" 
-                  alt="Progress reports and analytics"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Award className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Reports</h3>
-                  <p className="text-gray-600">Monthly parent updates</p>
-                </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <Smartphone className="w-6 h-6 text-green-600" />
               </div>
+              <h3 className="text-xl font-semibold mb-3">AR/VR Learning</h3>
+              <p className="text-gray-600 mb-4">Immersive technology making complex concepts simple and engaging</p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />3D Molecular Models</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Virtual Lab Experiments</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Interactive Simulations</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-orange-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Local Language Support</h3>
+              <p className="text-gray-600 mb-4">Learn in Kannada and English with culturally relevant content</p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Bilingual Teaching</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Cultural Context</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Regional Examples</li>
+              </ul>
             </div>
           </div>
           
