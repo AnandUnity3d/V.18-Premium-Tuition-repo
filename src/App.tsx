@@ -1137,7 +1137,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white max-w-3xl mx-auto px-6">
-                <h2 className="text-4xl font-bold mb-4">Visit Our Head Brach</h2>
+                <h2 className="text-4xl font-bold mb-4">Visit Our Head Branch</h2>
                 <p className="text-xl text-white/90 mb-6">Experience visual learning firsthand at our Jamkhandi location</p>
                 <div className="flex items-center justify-center text-white/80">
                   <MapPin className="h-5 w-5 mr-2" />
