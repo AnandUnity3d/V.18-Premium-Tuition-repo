@@ -366,15 +366,15 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-orange-500 mb-2">500+</div>
+              <div className="text-4xl font-bold text-orange-500 mb-2">100+</div>
               <div className="text-gray-300">Students Enrolled</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-500 mb-2">95%</div>
+              <div className="text-4xl font-bold text-blue-500 mb-2">100%</div>
               <div className="text-gray-300">Pass Rate</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-green-500 mb-2">50+</div>
+              <div className="text-4xl font-bold text-green-500 mb-2">100+</div>
               <div className="text-gray-300">AR/VR Modules</div>
             </div>
             <div>
@@ -390,7 +390,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Programs</h2>
-            <p className="text-xl text-gray-600">Comprehensive curriculum for Classes 8, 9, and 10</p>
+            <p className="text-xl text-gray-600">Comprehensive curriculum for Classes 8, 9, 10, 11 & 12</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Class 8 */}
