@@ -569,8 +569,17 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
 
             <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <Heart className="w-6 h-6 text-orange-600" />
+                <Target className="w-6 h-6 text-orange-600" />
               </div>
+              <h3 className="text-xl font-semibold mb-3">PUC 2</h3>
+              <p className="text-gray-600 mb-4">Exam preparation with comprehensive VR simulations</p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Advanced PCM/PCB</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Competitive Exam Prep</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Career Guidance</li>
+              </ul>
+            </div>
+          </div>
               <h3 className="text-xl font-semibold mb-3">Local Language Support</h3>
               <p className="text-gray-600 mb-4">Learn in Kannada and English with culturally relevant content</p>
               <ul className="space-y-2 text-sm text-gray-600">
