@@ -7,8 +7,7 @@ function App() {
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
 
   return (
-    <>
-      <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm fixed w-full top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -805,7 +804,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             </div>
           </div>
 
-          {/*  <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-12">
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-lg">
                 <img 
@@ -837,9 +836,9 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
                     Apply Now
                   </button>
-                </div>*/}
-              </div> 
-            </section>
+                </div>
+              </div>
+            </div>
             {/* <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-lg">
                 <img 
@@ -1439,8 +1438,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           </div>
         </div>
       )}
-      </div>
-    </>
+    </div>
   );
 }
 
