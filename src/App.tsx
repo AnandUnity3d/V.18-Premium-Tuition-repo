@@ -1326,6 +1326,8 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 <li>Class 8</li>
                 <li>Class 9</li>
                 <li>Class 10</li>
+                <li>PUC 1</li>
+                <li>PUC 2</li>
               </ul>
             </div>
             <div>
