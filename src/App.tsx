@@ -806,7 +806,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           
       <div className="grid md:grid-cols-2 gap-12">
             <div className="relative">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg">
+              {/* <div className="relative overflow-hidden rounded-2xl shadow-lg">
                 <img 
                   src="https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=800" 
                   alt="Admission details and offers"
@@ -815,7 +815,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div className="absolute inset-0 p-8 flex flex-col justify-end">
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
