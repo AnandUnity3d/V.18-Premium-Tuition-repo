@@ -361,6 +361,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 Book Free Demo Class
               </button>
             </div>
+            </div>
           </div>
         </div>
       </section>
