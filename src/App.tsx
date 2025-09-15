@@ -196,7 +196,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <img 
-                  src="https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                  src="/src/bb.png" 
                   alt="Students engaged in modern technology-based learning"
                   className="w-full h-80 object-cover"
                 />
