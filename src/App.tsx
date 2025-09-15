@@ -804,7 +804,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             </div>
           </div>
           
-          {/*<div className="grid md:grid-cols-2 gap-12">
+      <div className="grid md:grid-cols-2 gap-12">
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-lg">
                 <img 
@@ -836,7 +836,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
                     Apply Now
                   </button> 
-                </div>*/}
+                </div>
               </div>
             </div>
           
