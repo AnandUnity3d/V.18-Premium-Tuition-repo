@@ -565,7 +565,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Career Guidance</li>
               </ul>
             </div>
-              </ul>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
