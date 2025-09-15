@@ -82,7 +82,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 hover:rotate-1 transition-all duration-500 group-hover:shadow-3xl">
                 <img 
-                  src="/aa.jpg?auto=compress&cs=tinysrgb&w=800" 
+                  src="./aa.jpg?auto=compress&cs=tinysrgb&w=800" 
                   alt="Student wearing VR headset for immersive learning experience"
                   className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
