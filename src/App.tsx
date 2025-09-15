@@ -628,7 +628,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div className="p-6 bg-white/20 backdrop-blur-sm rounded-lg">
                   <h4 className="font-semibold text-white mb-2">Weekday Tuition</h4>
-                  <p className="text-white/80">Evening classes</p>
+                  <p className="text-white/80">Morning & Evening classes</p>
                 </div>
                 <div className="p-6 bg-white/20 backdrop-blur-sm rounded-lg">
                   <h4 className="font-semibold text-white mb-2">Holiday Courses</h4>
