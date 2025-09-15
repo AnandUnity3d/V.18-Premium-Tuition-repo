@@ -554,6 +554,46 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </button>
               </div>
             </div>
+
+           {/* Class 12 */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48">
+                <img 
+                  src="https://images.pexels.com/photos/5212700/pexels-photo-5212700.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                  alt="Class 9 students using VR for advanced learning"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-600/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="flex items-center text-white">
+                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center mr-3">
+                      <Brain className="h-5 w-5 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold">Class 12</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-6">Advanced concepts with visual learning</p>
+                <div className="space-y-4 mb-8">
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Subjects</h4>
+                    <p className="text-gray-600">Math, Chemistry, Physics, Biology</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">AR Modules</h4>
+                    <p className="text-gray-600">Human tissues, Motion simulation, Atomic structures</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Focus</h4>
+                    <p className="text-gray-600">Diagrams, numerical practice, memory tricks</p>
+                  </div>
+                </div>
+                <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
+                  Learn More
+                </button>
+              </div>
+            </div>
           
 
           {/* Programs Hero Image */}
