@@ -515,7 +515,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           </div>
 
           {/* Programs Hero Image */}
-          <div className="mt-16 relative overflow-hidden rounded-3xl shadow-2xl">
+          {/* <div className="mt-16 relative overflow-hidden rounded-3xl shadow-2xl">
             <img 
               src="https://images.pexels.com/photos/5212663/pexels-photo-5212663.jpeg?auto=compress&cs=tinysrgb&w=1200" 
               alt="Students using AR technology for interactive learning with digital overlays"
@@ -533,7 +533,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </div>
               </div>
             </div>
-          </div>
+          </div>*/}
 
           {/* Schedule */}
           <div className="mt-16 relative overflow-hidden rounded-2xl shadow-lg">
