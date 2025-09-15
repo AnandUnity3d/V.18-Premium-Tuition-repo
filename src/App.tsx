@@ -512,10 +512,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </button>
               </div>
             </div>
-          </div>
-
-
-           {/* Class 11 */}
+              {/* Class 11 */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <img 
@@ -594,7 +591,8 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </button>
               </div>
             </div>
-          
+          </div>
+
 
           {/* Programs Hero Image */}
           {/* <div className="mt-16 relative overflow-hidden rounded-3xl shadow-2xl">
