@@ -815,11 +815,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div className="absolute inset-0 p-8 flex flex-col justify-end">
                   <h3 className="text-2xl font-bold text-white mb-6">Admission Details</h3>
-                  <div className="space-y-4 mb-8">
-                   
-                    
-                    
-                  </div> 
+                  
   
                 </div>
               </div>
