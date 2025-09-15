@@ -935,14 +935,14 @@ Designed for students of all classes are fully based on State Board and CBSE syl
                         </div>
                         <div className="flex-1">
                           <h4 className="font-semibold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
-                            Are classes in Kannada or English?
+                            Are classes in Local languages or English?
                           </h4>
                           <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                             <div className="flex items-start">
                               <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                                 <span className="text-white font-bold text-sm">A</span>
                               </div>
-                              <p className="text-gray-700">We offer content and teaching in both <strong>Kannada and English medium</strong>.</p>
+                              <p className="text-gray-700">We offer content and teaching in both <strong>Local languages and English medium</strong>.</p>
                             </div>
                           </div>
                         </div>
