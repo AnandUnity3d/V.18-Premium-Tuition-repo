@@ -65,7 +65,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </button>
                 <button className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-50 hover:scale-105 hover:shadow-lg transition-all duration-300 font-medium flex items-center justify-center group">
                   <Play className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-                  See AR/VR in Action
+                  See Tech in Action
                 </button>
               </div>
               <div className="mt-6 flex items-center text-gray-600 hover:text-orange-600 transition-colors duration-300 cursor-pointer">
