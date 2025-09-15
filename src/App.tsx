@@ -166,7 +166,7 @@ Designed for students of all classes are fully based on State Board and CBSE syl
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Mission</h3>
               <p className="text-lg text-gray-600 mb-6">
-                To make science, math, and English simple, fun, and unforgettable for rural learners using immersive 3D content, visual models, and experienced teachers.
+                To make learning simple, fun, and unforgettable for every learner through immersive 3D content, visual models, and guidance from experienced teachers.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
