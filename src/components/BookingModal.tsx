@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, User, Phone, Mail, BookOpen, Calendar, MapPin } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import { EMAIL_CONFIG } from '../config/emailConfig';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -38,10 +39,10 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
     // Send email using EmailJS
     emailjs.send(
-      'YOUR_SERVICE_ID', // You'll need to replace this
-      'YOUR_TEMPLATE_ID', // You'll need to replace this
+      EMAIL_CONFIG.SERVICE_ID,
+      EMAIL_CONFIG.TEMPLATE_ID,
       templateParams,
-      'YOUR_PUBLIC_KEY' // You'll need to replace this
+      EMAIL_CONFIG.PUBLIC_KEY
     )
     .then((response) => {
       console.log('Email sent successfully:', response.status, response.text);
