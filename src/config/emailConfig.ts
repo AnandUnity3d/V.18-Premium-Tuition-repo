@@ -2,9 +2,9 @@
 // You need to replace these values with your actual EmailJS credentials
 
 export const EMAIL_CONFIG = {
-  SERVICE_ID: 'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+  SERVICE_ID: 'service_kqlfr3a', // Replace with your EmailJS service ID
   TEMPLATE_ID: 'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-  PUBLIC_KEY: 'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+  PUBLIC_KEY: 'pZIMSmLPuw0DQstgB' // Replace with your EmailJS public key
 };
 
 // Email template variables that will be sent:
