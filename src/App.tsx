@@ -5,6 +5,7 @@ import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
 import techImage from './cc.jpeg';
 import studentImage from './aa.jpg';
+import videoFile from './components/video.mp4';
 
 function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
@@ -660,11 +661,21 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           
           {/* Technology Hero Image */}
           <div className="mb-16 relative overflow-hidden rounded-3xl shadow-2xl">
-            <img 
-              src="https://images.pexels.com/photos/5212361/pexels-photo-5212361.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-              alt="Advanced VR learning technology in classroom"
-              className="w-full h-96 object-cover"
-            />
+            <div className="relative overflow-hidden rounded-2xl shadow-3xl animate-float">
+              <video
+                src={videoFile}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-96 object-cover"
+              />
+              
+              {/* Success Rate Badge */}
+              <div className="absolute top-6 right-6 bg-green-500 text-white px-4 py-2 rounded-full font-bold shadow-lg animate-pulse">
+                100% Success Rate
+              </div>
+            </div>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-orange-600/80"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white">
