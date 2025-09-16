@@ -41,7 +41,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
         
         <div className="p-6 bg-white">
           <h3 className="text-xl font-bold text-gray-900 mb-2">
-            V.18 Premium Tuition - AR/VR Learning Experience
+            V.18 Premium Tuition - Tech enabled Learning Experience
           </h3>
           <p className="text-gray-600">
             Experience the future of education with our immersive 3D learning technology. 
