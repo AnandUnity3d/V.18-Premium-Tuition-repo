@@ -69,7 +69,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   Book a Free Demo
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </button>
-                <button className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-50 hover:scale-105 hover:shadow-lg transition-all duration-300 font-medium flex items-center justify-center group">
+                <button onClick={() => setIsVideoModalOpen(true)} className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-50 hover:scale-105 hover:shadow-lg transition-all duration-300 font-medium flex items-center justify-center group">
                   <Play className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                   See Tech in Action
                 </button>
@@ -357,8 +357,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 Ready to Transform Your Child's Learning Experience?
               </h3>
               <p className="text-gray-600 mb-6">
-                onClick={() => setIsVideoModalOpen(true)}
-                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center space-x-2"
+                Book a free demo class and see how AR/VR technology makes learning fun and effective
               </p>
               <button onClick={() => setIsBookingModalOpen(true)} className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
                 Book Free Demo Class
