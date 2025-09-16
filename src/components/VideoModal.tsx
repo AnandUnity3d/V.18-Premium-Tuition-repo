@@ -25,7 +25,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
             className="w-full h-full object-cover"
             controls
             autoPlay
-            poster="https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            poster="https://images.pexels.com/photos/5212361/pexels-photo-5212361.jpeg?auto=compress&cs=tinysrgb&w=1200"
           >
             <source src={videoFile} type="video/mp4" />
             Your browser does not support the video tag.
