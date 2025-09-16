@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, User, Phone, Mail, BookOpen, Calendar, MapPin } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -20,19 +21,46 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you! We will contact you soon to schedule your free demo.');
-    onClose();
-    setFormData({
-      studentName: '',
-      parentName: '',
-      phone: '',
-      email: '',
-      class: '',
-      location: '',
-      preferredDate: '',
-      preferredTime: ''
+    
+    // Prepare email template parameters
+    const templateParams = {
+      to_email: 'v18premiumtuition@gmail.com',
+      student_name: formData.studentName,
+      parent_name: formData.parentName,
+      phone: formData.phone,
+      email: formData.email || 'Not provided',
+      class: formData.class,
+      location: formData.location,
+      preferred_date: formData.preferredDate,
+      preferred_time: formData.preferredTime,
+      submission_date: new Date().toLocaleString()
+    };
+
+    // Send email using EmailJS
+    emailjs.send(
+      'YOUR_SERVICE_ID', // You'll need to replace this
+      'YOUR_TEMPLATE_ID', // You'll need to replace this
+      templateParams,
+      'YOUR_PUBLIC_KEY' // You'll need to replace this
+    )
+    .then((response) => {
+      console.log('Email sent successfully:', response.status, response.text);
+      alert('Thank you! Your demo booking request has been sent successfully. We will contact you soon.');
+      onClose();
+      setFormData({
+        studentName: '',
+        parentName: '',
+        phone: '',
+        email: '',
+        class: '',
+        location: '',
+        preferredDate: '',
+        preferredTime: ''
+      });
+    })
+    .catch((error) => {
+      console.error('Failed to send email:', error);
+      alert('Sorry, there was an error sending your request. Please try again or contact us directly.');
     });
   };
 
