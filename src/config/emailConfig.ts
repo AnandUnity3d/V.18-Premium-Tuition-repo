@@ -4,7 +4,7 @@
 export const EMAIL_CONFIG = {
   SERVICE_ID: 'service_kqlfr3a', // Replace with your EmailJS service ID
   TEMPLATE_ID: 'template_wjld6z9', // Replace with your EmailJS template ID
-  PUBLIC_KEY: 'MFw61WT9prOpyFa0A42Jt' // Replace with your EmailJS public key
+  PUBLIC_KEY: 'pZIMSmLPuw0DQstgB' // Replace with your EmailJS public key
 };
 
 // Email template variables that will be sent:
