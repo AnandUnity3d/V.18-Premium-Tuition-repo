@@ -33,7 +33,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
           
           {/* Custom play button overlay for better UX */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="bg-blue-600 bg-opacity-80 rounded-full p-4 animate-pulse">
+            <div className="bg-blue-600 bg-opacity-90 rounded-full p-4 animate-pulse">
               <Play className="w-12 h-12 text-white ml-1" />
             </div>
           </div>
