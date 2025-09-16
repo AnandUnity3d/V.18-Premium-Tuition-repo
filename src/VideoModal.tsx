@@ -5,6 +5,7 @@
 
  interface VideoModalProps {
    isOpen: boolean;
+ }
 @@ .. @@
          <div className="relative aspect-video">
            <video
