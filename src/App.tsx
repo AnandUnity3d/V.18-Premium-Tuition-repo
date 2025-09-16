@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target, Building, X, User } from 'lucide-react';
 import BookingModal from './components/BookingModal';
+import classroomImage from './bb.png';
+import techImage from './cc.jpeg';
+import studentImage from './aa.jpg';
 
 function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
@@ -82,7 +85,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 hover:rotate-1 transition-all duration-500 group-hover:shadow-3xl">
                 <img 
-                  src="/src/aa.jpg" 
+                  src={studentImage}
                   alt="Student wearing VR headset for immersive learning experience"
                   className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -196,7 +199,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <img 
-                  src="/src/bb.png" 
+                  src={classroomImage}
                   alt="Students engaged in modern technology-based learning"
                   className="w-full h-80 object-cover"
                 />
