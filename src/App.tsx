@@ -1068,7 +1068,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               <ul className="space-y-2 text-gray-400">
                 <li>Jamkhandi, Karnataka</li>
                 <li>+91 8123144616</li>
-                <li>anandbiradar002@gmail.com</li>
+                <li>v18premiumtuition@gmail.com</li>
               </ul>
             </div>
           </div>
