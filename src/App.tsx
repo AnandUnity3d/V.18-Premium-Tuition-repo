@@ -486,14 +486,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <h4 className="font-semibold text-gray-900 mb-2">Subjects</h4>
                     <p className="text-gray-600">Science, Math, English</p>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">AR Modules</h4>
-                    <p className="text-gray-600">Heart & circulatory system, Ohm's law lab, Refraction</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Focus</h4>
-                    <p className="text-gray-600">Board exam prep + doubt solving + writing practice</p>
-                  </div>
                 </div>
                 <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
                   Learn More
