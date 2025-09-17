@@ -995,7 +995,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     alt="Academic curriculum and syllabus information"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-green-600/80 to-transparent"></div>
+                
                   
                 </div>
               
