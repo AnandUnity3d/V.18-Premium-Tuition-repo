@@ -287,23 +287,23 @@ export default function App() {
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Locations</h3>
             <p className="text-xl text-gray-600">Find the nearest V.18 Premium Tuition center</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {locations.map((location, index) => (
               <div
                 key={index}
                 onClick={() => openLocationModal(location)}
-                className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all cursor-pointer hover:scale-105"
+                className="bg-white p-3 rounded-lg shadow-md hover:shadow-lg transition-all cursor-pointer hover:scale-105"
               >
-                <div className="flex items-center mb-3">
+                <div className="flex items-center mb-2">
                   <MapPin className="w-5 h-5 text-blue-600 mr-2" />
-                  <h4 className="font-semibold text-lg">{location.name}</h4>
+                  <h4 className="font-semibold text-base">{location.name}</h4>
                 </div>
-                <p className="text-gray-600 text-sm mb-2">{location.address}</p>
-                <div className="flex items-center text-sm text-gray-500 mb-3">
+                <p className="text-gray-600 text-xs mb-2">{location.address}</p>
+                <div className="flex items-center text-xs text-gray-500 mb-2">
                   <Phone className="w-4 h-4 mr-1" />
                   <span>{location.phone}</span>
                 </div>
-                <div className="flex items-center text-sm text-blue-600">
+                <div className="flex items-center text-xs text-blue-600">
                   <Users className="w-4 h-4 mr-1" />
                   <span>3 Expert Teachers</span>
                 </div>
