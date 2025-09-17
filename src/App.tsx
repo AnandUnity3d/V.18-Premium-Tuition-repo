@@ -976,10 +976,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <BookOpen className="h-5 w-5 mr-2" />
                     <span>Academic Info</span>
                   </div>
-                  <div className="flex items-center">
-                    <Brain className="h-5 w-5 mr-2" />
-                    <span>Technology Details</span>
-                  </div>
+                  
                 </div>
               </div>
             </div>
