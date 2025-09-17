@@ -1193,45 +1193,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </div>
               </div>
             </div>
-            {/* <div className="relative">
-              <div className="relative overflow-hidden rounded-2xl">
-                <img 
-                  src="https://images.pexels.com/photos/5212663/pexels-photo-5212663.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="Contact form and communication"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
-                <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                  <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
-                  <form className="space-y-4">
-                    <div>
-                      <label className="block text-sm font-medium text-white mb-2">Name</label>
-                      <input type="text" className="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-white placeholder-white/70" placeholder="Your name" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-white mb-2">Phone</label>
-                      <input type="tel" className="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-white placeholder-white/70" placeholder="Your phone number" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-white mb-2">Class</label>
-                      <select className="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-white">
-                        <option className="text-gray-900">Select Class</option>
-                        <option className="text-gray-900">Class 8</option>
-                        <option className="text-gray-900">Class 9</option>
-                        <option className="text-gray-900">Class 10</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-white mb-2">Message</label>
-                      <textarea rows={3} className="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-white placeholder-white/70" placeholder="Your message"></textarea>
-                    </div>
-                    <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
-                      Send Message
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
