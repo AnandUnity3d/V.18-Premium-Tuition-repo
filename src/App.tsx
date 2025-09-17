@@ -996,14 +996,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-green-600/80 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div className="flex items-center text-white">
-                      <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center mr-3">
-                        <span className="text-2xl">📚</span>
-                      </div>
-                      <h3 className="text-2xl font-bold">Academic</h3>
-                    </div>
-                  </div>
+                  
                 </div>
               
               </div>
