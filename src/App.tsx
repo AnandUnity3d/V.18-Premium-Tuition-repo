@@ -255,6 +255,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 <h3 className="text-xl font-bold text-gray-900">Learning is Easy and Fun</h3>
               </div>
               <div className="space-y-3 text-gray-600">
+                 <span className="text-lg mr-2">🧠</span>
                 <p>• No more mugging up or fear of exams</p>
                 <p>• Deep understanding replaces rote memorization</p>
                 <p>• Students build curiosity and real interest in subjects</p>
