@@ -1072,18 +1072,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     </div>
                   </div>
                 </div>
-                <div className="p-8">
-                  <div className="space-y-6">
-                    <div className="group">
-                      <div className="flex items-start cursor-pointer">
-                        
-                       
-                      </div>
-                    </div>
-
-                    
-                  </div>
-                </div>
+            
               </div>
             </div>
           </div>
