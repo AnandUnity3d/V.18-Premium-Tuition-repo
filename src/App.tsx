@@ -275,22 +275,22 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 <div className="flex items-start">
                   <span className="text-lg mr-2">🧠</span>
                   <div>
-                    <p className="font-semibold text-gray-800">Intelligent students:</p>
-                    <p className="text-sm">Go beyond textbooks with visual and concept-based learning</p>
+                    <p className="font-semibold text-gray-800"> No more mugging up:</p>
+                    <p className="text-sm"> No more mugging up or fear of exams</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-lg mr-2">📘</span>
                   <div>
-                    <p className="font-semibold text-gray-800">Average students:</p>
-                    <p className="text-sm">Build strong basics and boost confidence step-by-step</p>
+                    <p className="font-semibold text-gray-800">Deep understanding:</p>
+                    <p className="text-sm">Deep understanding replaces rote memorization</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-lg mr-2">📕</span>
                   <div>
-                    <p className="font-semibold text-gray-800">Below-average students:</p>
-                    <p className="text-sm">Simple explanations, friendly teachers, and engaging visuals</p>
+                    <p className="font-semibold text-gray-800">curiosity:</p>
+                    <p className="text-sm">Students build curiosity and real interest in subjects</p>
                   </div>
                 </div>
               </div>
