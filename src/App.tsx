@@ -1080,9 +1080,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                           <span className="text-blue-600 font-bold text-sm">Q</span>
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                            What is AR/VR learning?
-                          </h4>
+                         
                           
                         </div>
                       </div>
