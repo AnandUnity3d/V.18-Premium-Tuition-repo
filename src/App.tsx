@@ -1063,9 +1063,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-600/80 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 right-4">
-                   
-                  </div>
+                  
                 </div>
               </div>
             </div>
