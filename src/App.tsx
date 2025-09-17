@@ -419,7 +419,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-gray-600 mb-6">Foundation building with concept clarity</p>
                 <div className="space-y-4 mb-8">
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Subjects</h4>
