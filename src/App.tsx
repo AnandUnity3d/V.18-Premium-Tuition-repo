@@ -1104,12 +1104,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                           <h4 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
                             Do students need special devices?
                           </h4>
-                          <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                            <div className="flex items-start">
-                             
-                      
-                            </div>
-                          </div>
+                         
                         </div>
                       </div>
                     </div>
