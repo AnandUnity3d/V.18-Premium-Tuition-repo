@@ -263,7 +263,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
 
 
 
- {/* Feature 2 */}
+ {/* Feature 1 */}
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
