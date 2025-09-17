@@ -956,9 +956,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
       {/* FAQ Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-
-        
           {/* Additional FAQ CTA */}
           <div className="mt-16 text-center">
             <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
