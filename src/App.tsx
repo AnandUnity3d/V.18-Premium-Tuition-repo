@@ -1064,10 +1064,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-600/80 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <div className="flex items-center text-white">
-                      
-                      <h3 className="text-2xl font-bold">Technology</h3>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
