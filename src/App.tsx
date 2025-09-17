@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target, Building, X, User } from 'lucide-react';
+import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target, Building, X, User, Info } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
@@ -11,6 +11,7 @@ function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
+  const [showBranchInfo, setShowBranchInfo] = useState(false);
 
   return (
     <div className="min-h-screen bg-white">
@@ -736,11 +737,39 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
       {/* Branches */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16 relative">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Our Branches</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
               Quality education accessible across multiple locations in Karnataka
             </p>
+            <button
+              onClick={() => setShowBranchInfo(!showBranchInfo)}
+              className="absolute top-0 right-0 p-2 text-gray-400 hover:text-blue-600 transition-colors"
+              title="Branch Information"
+            >
+              <Info className="w-5 h-5" />
+            </button>
+            
+            {showBranchInfo && (
+              <div className="absolute top-12 right-0 bg-white rounded-lg shadow-lg p-4 max-w-sm text-left z-10 border">
+                <div className="text-sm text-gray-600">
+                  <h4 className="font-semibold text-gray-900 mb-2">Branch Information</h4>
+                  <ul className="space-y-1">
+                    <li>• All branches offer the same premium curriculum</li>
+                    <li>• State-of-the-art AR/VR equipment at each location</li>
+                    <li>• Local language support available</li>
+                    <li>• Flexible timing options</li>
+                    <li>• Expert faculty at every branch</li>
+                  </ul>
+                </div>
+                <button
+                  onClick={() => setShowBranchInfo(false)}
+                  className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+            )}
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
