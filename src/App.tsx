@@ -247,19 +247,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-2xl">✅</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900">Learning is Easy and Fun</h3>
-              </div>
-              <div className="space-y-3 text-gray-600">
-                <p>• No more mugging up or fear of exams</p>
-                <p>• Deep understanding replaces rote memorization</p>
-                <p>• Students build curiosity and real interest in subjects</p>
-              </div>
-            </div>
+            
 
 
 
