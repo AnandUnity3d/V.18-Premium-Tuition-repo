@@ -977,16 +977,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 <li><a href="#admissions" className="hover:text-orange-500 transition-colors">Admissions</a></li>
               </ul>
             </div>
-            <div>
-              <h4 className="font-semibold mb-4">Programs</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>Class 8</li>
-                <li>Class 9</li>
-                <li>Class 10</li>
-                <li>Class 11</li>
-                <li>Class 12</li>
-              </ul>
-            </div>
+           
             
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
