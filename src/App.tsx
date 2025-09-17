@@ -1084,10 +1084,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                             What is AR/VR learning?
                           </h4>
                           <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                            <div className="flex items-start">
-                              
-                              <p className="text-gray-700">Students experience <strong>3D models and simulations</strong> using phones or projectors, making complex topics like the heart, circuits, or reflection easier to understand.</p>
-                            </div>
+                            
                           </div>
                         </div>
                       </div>
