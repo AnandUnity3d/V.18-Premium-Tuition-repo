@@ -962,16 +962,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center mb-4">
-                <GraduationCap className="h-8 w-8 text-orange-500" />
-                <span className="ml-2 text-xl font-bold">V.18 Premium Tuition</span>
-              </div>
-              <p className="text-gray-400">Next-Level Learning for State Board, CBSE and ICSE Students</p>
-            </div>
-            
-           
-            
-          </div>
+              
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 V.18 Premium Tuition. All rights reserved.</p>
           </div>
