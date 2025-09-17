@@ -1035,7 +1035,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 {[
                   {
                     name: 'Jamkhandi',
-                    address: 'Main Road, Jamkandi',
+                    address: 'Main Road, Jamkhandi',
                     phone: '+91 98765 43210',
                     status: 'Open'
                   },
