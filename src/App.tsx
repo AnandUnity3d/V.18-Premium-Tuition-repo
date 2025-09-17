@@ -340,9 +340,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                  <span className
-  )
-}="text-2xl">✅</span>
+                  <span className="text-2xl">✅</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Exam-Ready Without Pressure</h3>
               </div>
