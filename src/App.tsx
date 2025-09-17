@@ -9,6 +9,7 @@ import videoFile from './components/video.mp4';
 
 function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+  const [selectedBranch, setSelectedBranch] = useState<any>(null);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
 
