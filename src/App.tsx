@@ -256,6 +256,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               </div>
               <div className="space-y-3 text-gray-600">
                  <span className="text-lg mr-2">🧠</span>
+                  <div>
                 <p>• No more mugging up or fear of exams</p>
                 <p>• Deep understanding replaces rote memorization</p>
                 <p>• Students build curiosity and real interest in subjects</p>
