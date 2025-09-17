@@ -190,7 +190,6 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 <option value="Athani">Athani</option>
                 <option value="Harugeri">Harugeri</option>
                 <option value="Badami">Badami</option>
-                <option value="Other">Other</option>
               </select>
             </div>
 
