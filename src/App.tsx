@@ -968,15 +968,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               </div>
               <p className="text-gray-400">Next-Level Learning for State Board, CBSE and ICSE Students</p>
             </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#about" className="hover:text-orange-500 transition-colors">About</a></li>
-                <li><a href="#programs" className="hover:text-orange-500 transition-colors">Programs</a></li>
-                <li><a href="#technology" className="hover:text-orange-500 transition-colors">Technology</a></li>
-                <li><a href="#admissions" className="hover:text-orange-500 transition-colors">Admissions</a></li>
-              </ul>
-            </div>
+            
            
             
           </div>
