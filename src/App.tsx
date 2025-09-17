@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target, Building, X, User, Info } from 'lucide-react';
+import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target, Building, X, User, Info, Calculator, MessageCircle, Cpu } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
@@ -228,6 +228,218 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Teacher Details Section */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+              Our Expert Faculty
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Meet our dedicated team of experienced educators who bring innovation and expertise to every classroom
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Teacher 1 */}
+            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center space-x-3 mb-3">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                  <GraduationCap className="w-5 h-5 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-sm">Dr. Priya Sharma</h3>
+                  <p className="text-xs text-gray-600">Physics & Mathematics</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-center text-xs text-gray-600">
+                  <Award className="w-3 h-3 mr-2 text-green-600" />
+                  <span>15+ years experience</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
+                  <span>M.Sc Physics, B.Ed</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <Star className="w-3 h-3 mr-2 text-yellow-500" />
+                  <span>AR/VR Learning Specialist</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Teacher 2 */}
+            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center space-x-3 mb-3">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                  <Users className="w-5 h-5 text-green-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-sm">Prof. Rajesh Kumar</h3>
+                  <p className="text-xs text-gray-600">Chemistry & Biology</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-center text-xs text-gray-600">
+                  <Award className="w-3 h-3 mr-2 text-green-600" />
+                  <span>12+ years experience</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
+                  <span>M.Sc Chemistry, Ph.D</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <Globe className="w-3 h-3 mr-2 text-purple-600" />
+                  <span>Bilingual Expert (Kannada/English)</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Teacher 3 */}
+            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center space-x-3 mb-3">
+                <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                  <Calculator className="w-5 h-5 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-sm">Ms. Anita Patil</h3>
+                  <p className="text-xs text-gray-600">Mathematics & Computer Science</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-center text-xs text-gray-600">
+                  <Award className="w-3 h-3 mr-2 text-green-600" />
+                  <span>10+ years experience</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
+                  <span>MCA, B.Ed Mathematics</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <Zap className="w-3 h-3 mr-2 text-orange-500" />
+                  <span>Tech Integration Expert</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Teacher 4 */}
+            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center space-x-3 mb-3">
+                <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
+                  <Heart className="w-5 h-5 text-red-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-sm">Mr. Suresh Gowda</h3>
+                  <p className="text-xs text-gray-600">English & Social Studies</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-center text-xs text-gray-600">
+                  <Award className="w-3 h-3 mr-2 text-green-600" />
+                  <span>8+ years experience</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
+                  <span>MA English, B.Ed</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <MessageCircle className="w-3 h-3 mr-2 text-indigo-600" />
+                  <span>Communication Skills Expert</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Teacher 5 */}
+            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center space-x-3 mb-3">
+                <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                  <Target className="w-5 h-5 text-yellow-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-sm">Dr. Kavitha Reddy</h3>
+                  <p className="text-xs text-gray-600">Career Counselor & Mentor</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-center text-xs text-gray-600">
+                  <Award className="w-3 h-3 mr-2 text-green-600" />
+                  <span>20+ years experience</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
+                  <span>Ph.D Psychology, M.Ed</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <TrendingUp className="w-3 h-3 mr-2 text-green-500" />
+                  <span>Student Success Specialist</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Teacher 6 */}
+            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center space-x-3 mb-3">
+                <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                  <Lightbulb className="w-5 h-5 text-indigo-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-sm">Mr. Arun Joshi</h3>
+                  <p className="text-xs text-gray-600">Innovation & Tech Coordinator</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-center text-xs text-gray-600">
+                  <Award className="w-3 h-3 mr-2 text-green-600" />
+                  <span>6+ years experience</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
+                  <span>B.Tech IT, M.Ed Technology</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-600">
+                  <Cpu className="w-3 h-3 mr-2 text-blue-500" />
+                  <span>AR/VR Technology Lead</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Faculty Stats */}
+          <div className="mt-8 bg-white rounded-lg p-6 shadow-md">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+              <div>
+                <div className="flex items-center justify-center mb-2">
+                  <Users className="w-4 h-4 text-blue-600 mr-1" />
+                  <span className="text-lg font-bold text-gray-900">25+</span>
+                </div>
+                <p className="text-xs text-gray-600">Expert Teachers</p>
+              </div>
+              <div>
+                <div className="flex items-center justify-center mb-2">
+                  <Award className="w-4 h-4 text-green-600 mr-1" />
+                  <span className="text-lg font-bold text-gray-900">15+</span>
+                </div>
+                <p className="text-xs text-gray-600">Avg. Experience</p>
+              </div>
+              <div>
+                <div className="flex items-center justify-center mb-2">
+                  <GraduationCap className="w-4 h-4 text-purple-600 mr-1" />
+                  <span className="text-lg font-bold text-gray-900">100%</span>
+                </div>
+                <p className="text-xs text-gray-600">Qualified Faculty</p>
+              </div>
+              <div>
+                <div className="flex items-center justify-center mb-2">
+                  <Star className="w-4 h-4 text-yellow-500 mr-1" />
+                  <span className="text-lg font-bold text-gray-900">4.9/5</span>
+                </div>
+                <p className="text-xs text-gray-600">Student Rating</p>
               </div>
             </div>
           </div>
