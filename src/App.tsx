@@ -956,18 +956,9 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
       {/* FAQ Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
-              FAQ – Frequently Asked Questions
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Got Questions? We Have Answers</h2>
-            <p className="text-xl text-gray-600">Everything you need to know about V.18 Premium Tuition</p>
-          </div>
-
           
 
-          
-
+        
           {/* Additional FAQ CTA */}
           <div className="mt-16 text-center">
             <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
