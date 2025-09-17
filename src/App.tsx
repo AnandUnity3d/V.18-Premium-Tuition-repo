@@ -964,23 +964,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             <p className="text-xl text-gray-600">Everything you need to know about V.18 Premium Tuition</p>
           </div>
 
-          {/* FAQ Hero Image */}
-          <div className="mb-16 relative overflow-hidden rounded-3xl shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/70 to-purple-600/70"></div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white max-w-3xl mx-auto px-6">
-                <h3 className="text-3xl font-bold mb-4">Clear Your Doubts</h3>
-                <p className="text-xl text-white/90 mb-6">Get instant answers to common questions about our AR/VR learning programs</p>
-                <div className="flex items-center justify-center space-x-8 text-white/80">
-                  <div className="flex items-center">
-                    <BookOpen className="h-5 w-5 mr-2" />
-                    <span>Academic Info</span>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           
 
