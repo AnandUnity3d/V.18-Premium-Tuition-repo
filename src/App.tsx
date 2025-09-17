@@ -246,12 +246,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Feature 1 */}
-            
-
-
-
- {/* Feature 1 */}
+{/* Feature 1 */}
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
@@ -283,6 +278,11 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </div>
               </div>
             </div>
+            
+
+
+
+ 
             
 
             {/* Feature 2 */}
