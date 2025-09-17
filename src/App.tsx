@@ -985,15 +985,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Academic FAQ */}
-            <div className="relative">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg bg-white">
-            
-              
-              </div>
-            </div>
-          </div>
+          
 
           {/* Additional FAQ CTA */}
           <div className="mt-16 text-center">
