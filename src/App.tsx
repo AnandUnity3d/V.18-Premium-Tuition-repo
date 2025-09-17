@@ -987,14 +987,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 <li>Class 12</li>
               </ul>
             </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact Info</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>Jamkhandi, Karnataka</li>
-                <li>+91 8123144616</li>
-                <li>anandbiradar002@gmail.com</li>
-              </ul>
-            </div>
+            
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 V.18 Premium Tuition. All rights reserved.</p>
