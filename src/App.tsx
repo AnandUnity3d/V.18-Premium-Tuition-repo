@@ -1079,10 +1079,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                         <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0 group-hover:bg-blue-200 transition-colors">
                           <span className="text-blue-600 font-bold text-sm">Q</span>
                         </div>
-                        <div className="flex-1">
-                         
-                          
-                        </div>
+                       
                       </div>
                     </div>
 
