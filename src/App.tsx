@@ -261,6 +261,42 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               </div>
             </div>
 
+
+
+ {/* Feature 2 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl">✅</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Designed for All Students</h3>
+              </div>
+              <div className="space-y-4 text-gray-600">
+                <div className="flex items-start">
+                  <span className="text-lg mr-2">🧠</span>
+                  <div>
+                    <p className="font-semibold text-gray-800">Intelligent students:</p>
+                    <p className="text-sm">Go beyond textbooks with visual and concept-based learning</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-lg mr-2">📘</span>
+                  <div>
+                    <p className="font-semibold text-gray-800">Average students:</p>
+                    <p className="text-sm">Build strong basics and boost confidence step-by-step</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-lg mr-2">📕</span>
+                  <div>
+                    <p className="font-semibold text-gray-800">Below-average students:</p>
+                    <p className="text-sm">Simple explanations, friendly teachers, and engaging visuals</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
             {/* Feature 2 */}
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="flex items-center mb-6">
