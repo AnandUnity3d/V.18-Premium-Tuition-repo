@@ -1018,17 +1018,13 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                           </h4>
                           <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                             <div className="flex items-start">
-                              <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                                <span className="text-white font-bold text-sm">A</span>
-                              </div>
+                              
                               <p className="text-gray-700">We follow <strong>State Board, CBSE & ICSE Students</strong> for Classes 8–12.</p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-
-                  
                   </div>
                 </div>
               </div>
