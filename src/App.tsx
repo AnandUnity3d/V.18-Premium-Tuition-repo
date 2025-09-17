@@ -1043,13 +1043,13 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     name: 'Athani',
                     address: 'Education Street, Athani',
                     phone: '+91 98765 43211',
-                    status: 'Open'
+                    status: 'Coming Soon'
                   },
                   {
                     name: 'Harugeri',
                     address: 'School Road, Harugeri',
                     phone: '+91 98765 43212',
-                    status: 'Open'
+                    status: 'Coming Soon'
                   },
                   {
                     name: 'Badami',
