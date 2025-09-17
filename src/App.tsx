@@ -422,7 +422,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 <div className="space-y-4 mb-8">
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Subjects</h4>
-                    <p className="text-gray-600">Science, Math, English</p>
+                    <p className="text-gray-600">Science, Mathematics, English</p>
                   </div>
                 </div>
                 <button className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors font-medium">
