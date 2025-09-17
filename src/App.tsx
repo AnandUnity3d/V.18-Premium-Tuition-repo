@@ -989,15 +989,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             {/* Academic FAQ */}
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-lg bg-white">
-                <div className="relative h-48">
-                  <img 
-                    src="https://images.pexels.com/photos/8471777/pexels-photo-8471777.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                    alt="Academic curriculum and syllabus information"
-                    className="w-full h-full object-cover"
-                  />
-                
-                  
-                </div>
+            
               
               </div>
             </div>
