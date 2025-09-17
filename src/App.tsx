@@ -959,7 +959,9 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
 
       {/* Footer */}
       <footer className="bg-black text-white py-12">
-        <p>&copy; 2025 V.18 Premium Tuition. All rights reserved.</p>
+        <div className="text-center">
+            <p>&copy; 2025 V.18 Premium Tuition. All rights reserved.</p>
+          </div>
       </footer>
 
       {/* Booking Modal */}
