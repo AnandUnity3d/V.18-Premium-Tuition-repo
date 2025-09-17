@@ -1062,7 +1062,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     alt="Technology-Enabled Teaching"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-600/80 to-transparent"></div>
+                 
                   
                 </div>
               </div>
