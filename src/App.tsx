@@ -1037,9 +1037,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                           <h4 className="font-semibold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
                             Are classes in Local languages or English?
                           </h4>
-                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                            
-                          </div>
+                   
                         </div>
                       </div>
                     </div>
