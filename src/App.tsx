@@ -1017,10 +1017,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                             Which syllabus do you follow?
                           </h4>
                           <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                            <div className="flex items-start">
-                              
-                              <p className="text-gray-700">We follow <strong>State Board, CBSE & ICSE Students</strong> for Classes 8–12.</p>
-                            </div>
+                            
                           </div>
                         </div>
                       </div>
