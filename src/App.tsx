@@ -768,8 +768,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
         </div>
       </section>
 
-     
-
       {/* Testimonials Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
