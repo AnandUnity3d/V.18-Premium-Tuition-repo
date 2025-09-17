@@ -1056,15 +1056,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             {/* Technology FAQ */}
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-lg bg-white">
-                <div className="relative h-48">
-                  <img 
-                    src="https://images.pexels.com/photos/8471691/pexels-photo-8471691.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                    alt="Technology-Enabled Teaching"
-                    className="w-full h-full object-cover"
-                  />
-                 
-                  
-                </div>
+         
               </div>
             </div>
           </div>
