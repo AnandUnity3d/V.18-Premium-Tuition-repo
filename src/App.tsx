@@ -722,7 +722,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {[
               {
-                name: 'Jamkandi',
+                name: 'Jamkhandi',
                 address: 'Main Road, Jamkandi',
                 phone: '+91 98765 43210',
                 status: 'Open'
