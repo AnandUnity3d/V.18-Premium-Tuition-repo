@@ -11,7 +11,7 @@ function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
-
+  const [selectedBranch, setSelectedBranch] = useState<string | null>(null);
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -340,7 +340,9 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-2xl">✅</span>
+                  <span className
+  )
+}="text-2xl">✅</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Exam-Ready Without Pressure</h3>
               </div>
@@ -704,161 +706,36 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   </button>
                 </div>
               </div>
-            </div>
-          </div>
-        </div> 
-      </section>
-
-      {/* Branches */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Our Branches</h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-              Quality education accessible across multiple locations in Karnataka
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {[
-              {
-                name: 'Jamkhandi',
-                address: 'Main Road, Jamkandi',
-                phone: '+91 98765 43210',
-                status: 'Open'
-              },
-              {
-                name: 'Athani',
-                address: 'Education Street, Athani',
-                phone: '+91 98765 43211',
-                status: 'Coming Soon'
-              },
-              {
-                name: 'Harugeri',
-                address: 'School Road, Harugeri',
-                phone: '+91 98765 43212',
-                status: 'Coming Soon'
-              },
-              {
-                name: 'Badami',
-                address: 'Heritage Lane, Badami',
-                phone: '+91 98765 43213',
-                status: 'Coming Soon'
-              }
-            ].map((branch, index) => (
-              <div key={index} className="bg-gray-50 p-4 sm:p-6 rounded-xl hover:shadow-lg transition-all duration-300 group">
-                <div className="text-center">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:bg-blue-200 transition-colors">
-                    <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">{branch.name}</h3>
-                  <p className="text-sm sm:text-base text-gray-600 mb-2">{branch.address}</p>
-                  <p className="text-sm sm:text-base text-gray-600 mb-3">{branch.phone}</p>
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs sm:text-sm font-medium ${
-                    branch.status === 'Open' 
-                      ? 'bg-green-100 text-green-800' 
-                      : 'bg-yellow-100 text-yellow-800'
-                  }`}>
-                    {branch.status}
-                  </span>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      
-
-      {/* Testimonials Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Parents & Students Say</h2>
-            <p className="text-xl text-gray-600">Real experiences from our V.18 family</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-2xl p-8">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-gray-700 mb-6">"My son hated science. After joining V.18, he explains diagrams using AR – now he loves the subject!"</p>
-              <div className="flex items-center">
-                <img 
-                  src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100" 
-                  alt="Parent testimonial"
-                  className="w-10 h-10 rounded-full object-cover mr-3"
-                />
-                <div>
-                  <div className="font-semibold text-gray-900">Parent</div>
-                  <div className="text-gray-600 text-sm">9th Standard</div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-50 rounded-2xl p-8">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-gray-700 mb-6">"We tried online tuition but didn't work. This one is different. They show us real models in class."</p>
-              <div className="flex items-center">
-                <img 
-                  src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100" 
-                  alt="Parent testimonial"
-                  className="w-10 h-10 rounded-full object-cover mr-3"
-                />
-                <div>
-                  <div className="font-semibold text-gray-900">Parent</div>
-                  <div className="text-gray-600 text-sm">10th Standard</div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-50 rounded-2xl p-8">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-gray-700 mb-6">"Heart model 3D was amazing – it helped me write the answer in the exam properly."</p>
-              <div className="flex items-center">
-                <img 
-                  src="https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=100" 
-                  alt="Student testimonial"
-                  className="w-10 h-10 rounded-full object-cover mr-3"
-                />
-                <div>
-                  <div className="font-semibold text-gray-900">Student</div>
-                  <div className="text-gray-600 text-sm">Class 10</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Additional FAQ CTA */}
-          <div className="mt-16 text-center">
-            <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
-              <div className="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <Phone className="h-8 w-8 text-orange-500" />
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl max-w-md w-full p-6">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold text-gray-900">
+                {selectedBranch}
+              </h2>
+              <button
+                onClick={() => setSelectedBranch(null)}
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Still Have Questions?</h3>
-              <p className="text-gray-600 mb-6">Our team is here to help you understand how visual learning can benefit your child</p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium flex items-center justify-center">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call Us: +91 8123144616
-                </button>
-                <button onClick={() => setIsBookingModalOpen(true)} className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium">
-                  Book Free Demo
-                </button>
-              </div>
+              <p className="text-gray-600 mb-6">Branch Location</p>
+              <button
+                onClick={() => {
+                  setSelectedBranch(null);
+                  setIsBookingModalOpen(true);
+                }}
+                className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                Book Free Demo
+              </button>
             </div>
           </div>
         </div>
@@ -1034,7 +911,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               <div className="space-y-4">
                 {[
                   {
-                    name: 'Jamkhandi',
+                    name: 'Jamkandi',
                     address: 'Main Road, Jamkandi',
                     phone: '+91 98765 43210',
                     status: 'Open'
@@ -1043,13 +920,13 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     name: 'Athani',
                     address: 'Education Street, Athani',
                     phone: '+91 98765 43211',
-                    status: 'Coming Soon'
+                    status: 'Open'
                   },
                   {
                     name: 'Harugeri',
                     address: 'School Road, Harugeri',
                     phone: '+91 98765 43212',
-                    status: 'Coming Soon'
+                    status: 'Open'
                   },
                   {
                     name: 'Badami',
