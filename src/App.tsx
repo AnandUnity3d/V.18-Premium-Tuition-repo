@@ -704,38 +704,42 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   </button>
                 </div>
               </div>
-                </div>
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                <Phone className="h-8 w-8 text-orange-500" />
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl max-w-md w-full p-6">
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-bold text-gray-900">
-                {selectedBranch}
-              </h2>
-              <button
-                onClick={() => setSelectedBranch(null)}
-                className="text-gray-400 hover:text-gray-600 transition-colors"
-              >
-                <X className="w-6 h-6" />
-              </button>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-blue-600" />
-              </div>
-              <p className="text-gray-600 mb-6">Branch Location</p>
-              <button
-                onClick={() => {
-                  setSelectedBranch(null);
-                  setIsBookingModalOpen(true);
-                }}
-                className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Book Free Demo
-              </button>
             </div>
           </div>
+
+          {/* Branch Selection Modal */}
+          {selectedBranch && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+              <div className="bg-white rounded-xl max-w-md w-full p-6">
+                <div className="flex justify-between items-center mb-4">
+                  <h2 className="text-xl font-bold text-gray-900">
+                    {selectedBranch}
+                  </h2>
+                  <button
+                    onClick={() => setSelectedBranch(null)}
+                    className="text-gray-400 hover:text-gray-600 transition-colors"
+                  >
+                    <X className="w-6 h-6" />
+                  </button>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <MapPin className="w-8 h-8 text-blue-600" />
+                  </div>
+                  <p className="text-gray-600 mb-6">Branch Location</p>
+                  <button
+                    onClick={() => {
+                      setSelectedBranch(null);
+                      setIsBookingModalOpen(true);
+                    }}
+                    className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    Book Free Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </section> 
 
