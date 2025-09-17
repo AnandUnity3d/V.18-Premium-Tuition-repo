@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target, Building, X, User, Info, Calculator, MessageCircle, Cpu, Globe } from 'lucide-react';
+import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target, Building, X, User } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
@@ -11,7 +11,6 @@ function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
-  const [showBranchInfo, setShowBranchInfo] = useState(false);
 
   return (
     <div className="min-h-screen bg-white">
@@ -228,218 +227,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Teacher Details Section */}
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-              Our Expert Faculty
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Meet our dedicated team of experienced educators who bring innovation and expertise to every classroom
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Teacher 1 */}
-            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center space-x-3 mb-3">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                  <GraduationCap className="w-5 h-5 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 text-sm">Dr. Priya Sharma</h3>
-                  <p className="text-xs text-gray-600">Physics & Mathematics</p>
-                </div>
-              </div>
-              <div className="space-y-2">
-                <div className="flex items-center text-xs text-gray-600">
-                  <Award className="w-3 h-3 mr-2 text-green-600" />
-                  <span>15+ years experience</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
-                  <span>M.Sc Physics, B.Ed</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <Star className="w-3 h-3 mr-2 text-yellow-500" />
-                  <span>AR/VR Learning Specialist</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Teacher 2 */}
-            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center space-x-3 mb-3">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                  <Users className="w-5 h-5 text-green-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 text-sm">Prof. Rajesh Kumar</h3>
-                  <p className="text-xs text-gray-600">Chemistry & Biology</p>
-                </div>
-              </div>
-              <div className="space-y-2">
-                <div className="flex items-center text-xs text-gray-600">
-                  <Award className="w-3 h-3 mr-2 text-green-600" />
-                  <span>12+ years experience</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
-                  <span>M.Sc Chemistry, Ph.D</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <Globe className="w-3 h-3 mr-2 text-purple-600" />
-                  <span>Bilingual Expert (Kannada/English)</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Teacher 3 */}
-            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center space-x-3 mb-3">
-                <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                  <Calculator className="w-5 h-5 text-purple-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 text-sm">Ms. Anita Patil</h3>
-                  <p className="text-xs text-gray-600">Mathematics & Computer Science</p>
-                </div>
-              </div>
-              <div className="space-y-2">
-                <div className="flex items-center text-xs text-gray-600">
-                  <Award className="w-3 h-3 mr-2 text-green-600" />
-                  <span>10+ years experience</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
-                  <span>MCA, B.Ed Mathematics</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <Zap className="w-3 h-3 mr-2 text-orange-500" />
-                  <span>Tech Integration Expert</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Teacher 4 */}
-            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center space-x-3 mb-3">
-                <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
-                  <Heart className="w-5 h-5 text-red-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 text-sm">Mr. Suresh Gowda</h3>
-                  <p className="text-xs text-gray-600">English & Social Studies</p>
-                </div>
-              </div>
-              <div className="space-y-2">
-                <div className="flex items-center text-xs text-gray-600">
-                  <Award className="w-3 h-3 mr-2 text-green-600" />
-                  <span>8+ years experience</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
-                  <span>MA English, B.Ed</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <MessageCircle className="w-3 h-3 mr-2 text-indigo-600" />
-                  <span>Communication Skills Expert</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Teacher 5 */}
-            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center space-x-3 mb-3">
-                <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <Target className="w-5 h-5 text-yellow-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 text-sm">Dr. Kavitha Reddy</h3>
-                  <p className="text-xs text-gray-600">Career Counselor & Mentor</p>
-                </div>
-              </div>
-              <div className="space-y-2">
-                <div className="flex items-center text-xs text-gray-600">
-                  <Award className="w-3 h-3 mr-2 text-green-600" />
-                  <span>20+ years experience</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
-                  <span>Ph.D Psychology, M.Ed</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <TrendingUp className="w-3 h-3 mr-2 text-green-500" />
-                  <span>Student Success Specialist</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Teacher 6 */}
-            <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center space-x-3 mb-3">
-                <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
-                  <Lightbulb className="w-5 h-5 text-indigo-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 text-sm">Mr. Arun Joshi</h3>
-                  <p className="text-xs text-gray-600">Innovation & Tech Coordinator</p>
-                </div>
-              </div>
-              <div className="space-y-2">
-                <div className="flex items-center text-xs text-gray-600">
-                  <Award className="w-3 h-3 mr-2 text-green-600" />
-                  <span>6+ years experience</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <BookOpen className="w-3 h-3 mr-2 text-blue-600" />
-                  <span>B.Tech IT, M.Ed Technology</span>
-                </div>
-                <div className="flex items-center text-xs text-gray-600">
-                  <Cpu className="w-3 h-3 mr-2 text-blue-500" />
-                  <span>AR/VR Technology Lead</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Faculty Stats */}
-          <div className="mt-8 bg-white rounded-lg p-6 shadow-md">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-              <div>
-                <div className="flex items-center justify-center mb-2">
-                  <Users className="w-4 h-4 text-blue-600 mr-1" />
-                  <span className="text-lg font-bold text-gray-900">25+</span>
-                </div>
-                <p className="text-xs text-gray-600">Expert Teachers</p>
-              </div>
-              <div>
-                <div className="flex items-center justify-center mb-2">
-                  <Award className="w-4 h-4 text-green-600 mr-1" />
-                  <span className="text-lg font-bold text-gray-900">15+</span>
-                </div>
-                <p className="text-xs text-gray-600">Avg. Experience</p>
-              </div>
-              <div>
-                <div className="flex items-center justify-center mb-2">
-                  <GraduationCap className="w-4 h-4 text-purple-600 mr-1" />
-                  <span className="text-lg font-bold text-gray-900">100%</span>
-                </div>
-                <p className="text-xs text-gray-600">Qualified Faculty</p>
-              </div>
-              <div>
-                <div className="flex items-center justify-center mb-2">
-                  <Star className="w-4 h-4 text-yellow-500 mr-1" />
-                  <span className="text-lg font-bold text-gray-900">4.9/5</span>
-                </div>
-                <p className="text-xs text-gray-600">Student Rating</p>
               </div>
             </div>
           </div>
@@ -950,17 +737,356 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Experience the Future of Learning
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Join thousands of students who are already experiencing the power of AR/VR education
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Our Branches</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+              Quality education accessible across multiple locations in Karnataka
             </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            {[
+              {
+                name: 'Jamkhandi',
+                address: 'Main Road, Jamkhandi',
+                phone: '+91 98765 43210',
+                status: 'Open'
+              },
+              {
+                name: 'Athani',
+                address: 'Education Street, Athani',
+                phone: '+91 98765 43211',
+                status: 'Coming Soon'
+              },
+              {
+                name: 'Harugeri',
+                address: 'School Road, Harugeri',
+                phone: '+91 98765 43212',
+                status: 'Coming Soon'
+              },
+              {
+                name: 'Badami',
+                address: 'Heritage Lane, Badami',
+                phone: '+91 98765 43213',
+                status: 'Coming Soon'
+              }
+            ].map((branch, index) => (
+              <div key={index} className="bg-gray-50 p-4 sm:p-6 rounded-xl hover:shadow-lg transition-all duration-300 group">
+                <div className="text-center">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:bg-blue-200 transition-colors">
+                    <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">{branch.name}</h3>
+                  <p className="text-sm sm:text-base text-gray-600 mb-2">{branch.address}</p>
+                  <p className="text-sm text-gray-600 mb-3">{branch.phone}</p>
+                  <span className={`inline-block px-3 py-1 rounded-full text-xs sm:text-sm font-medium ${
+                    branch.status === 'Open' 
+                      ? 'bg-green-100 text-green-800' 
+                      : 'bg-yellow-100 text-yellow-800'
+                  }`}>
+                    {branch.status}
+                  </span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Parents & Students Say</h2>
+            <p className="text-xl text-gray-600">Real experiences from our V.18 family</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6">"My son hated science. After joining V.18, he explains diagrams using AR – now he loves the subject!"</p>
+              <div className="flex items-center">
+                <img 
+                  src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                  alt="Parent testimonial"
+                  className="w-10 h-10 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <div className="font-semibold text-gray-900">Parent</div>
+                  <div className="text-gray-600 text-sm">9th Standard</div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6">"We tried online tuition but didn't work. This one is different. They show us real models in class."</p>
+              <div className="flex items-center">
+                <img 
+                  src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                  alt="Parent testimonial"
+                  className="w-10 h-10 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <div className="font-semibold text-gray-900">Parent</div>
+                  <div className="text-gray-600 text-sm">10th Standard</div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6">"Heart model 3D was amazing – it helped me write the answer in the exam properly."</p>
+              <div className="flex items-center">
+                <img 
+                  src="https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                  alt="Student testimonial"
+                  className="w-10 h-10 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <div className="font-semibold text-gray-900">Student</div>
+                  <div className="text-gray-600 text-sm">Class 10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Additional FAQ CTA */}
+          <div className="mt-16 text-center">
+            <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
+              <div className="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <Phone className="h-8 w-8 text-orange-500" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Still Have Questions?</h3>
+              <p className="text-gray-600 mb-6">Our team is here to help you understand how visual learning can benefit your child</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium flex items-center justify-center">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Call Us: +91 8123144616
+                </button>
+                <button onClick={() => setIsBookingModalOpen(true)} className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium">
+                  Book Free Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Contact Hero Image */}
+          <div className="mb-16 relative overflow-hidden rounded-3xl shadow-2xl">
+            <img 
+              src="https://images.pexels.com/photos/5212361/pexels-photo-5212361.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+              alt="V.18 tuition center location and contact"
+              className="w-full h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent"></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-white max-w-3xl mx-auto px-6">
+                <h2 className="text-4xl font-bold mb-4">Visit Our Head Branch</h2>
+                <p className="text-xl text-white/90 mb-6">Experience visual learning firsthand at our Jamkhandi location</p>
+                <div className="flex items-center justify-center text-white/80">
+                  <MapPin className="h-5 w-5 mr-2" />
+                  <span>Near Govt High School, Jamkhandi, Karnataka</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-bold mb-6">V.18 Premium Tuition </h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <MapPin className="h-6 w-6 text-orange-500 mr-3 mt-1" />
+                  <div>
+                    <p className="font-semibold">Address</p>
+                    <p className="text-gray-300">Near Govt High School, Jamkhandi, Karnataka</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Phone className="h-6 w-6 text-orange-500 mr-3 mt-1" />
+                  <div>
+                    <p className="font-semibold">Phone</p>
+                    <p className="text-gray-300">+91 8123144616</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Mail className="h-6 w-6 text-orange-500 mr-3 mt-1" />
+                  <div>
+                    <p className="font-semibold">Email</p>
+                    <p className="text-gray-300">anandbiradar002@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl">
+                <img 
+                  src="https://images.pexels.com/photos/5212663/pexels-photo-5212663.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                  alt="Contact form and communication"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
+                <div className="absolute inset-0 p-8 flex flex-col justify-end">
+                  <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
+                  <form className="space-y-4">
+                    <div>
+                      <label className="block text-sm font-medium text-white mb-2">Name</label>
+                      <input type="text" className="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-white placeholder-white/70" placeholder="Your name" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-white mb-2">Phone</label>
+                      <input type="tel" className="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-white placeholder-white/70" placeholder="Your phone number" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-white mb-2">Class</label>
+                      <select className="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-white">
+                        <option className="text-gray-900">Select Class</option>
+                        <option className="text-gray-900">Class 8</option>
+                        <option className="text-gray-900">Class 9</option>
+                        <option className="text-gray-900">Class 10</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-white mb-2">Message</label>
+                      <textarea rows={3} className="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-white placeholder-white/70" placeholder="Your message"></textarea>
+                    </div>
+                    <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div> */}
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-black text-white py-12">
+        <div className="text-center">
+            <p>&copy; 2025 V.18 Premium Tuition. All rights reserved.</p>
+          </div>
+      </footer>
+
+      {/* Booking Modal */}
+      <BookingModal 
+        isOpen={isBookingModalOpen} 
+        onClose={() => setIsBookingModalOpen(false)} 
+      />
+      <VideoModal 
+        isOpen={isVideoModalOpen} 
+        onClose={() => setIsVideoModalOpen(false)} 
+      />
+
+      {/* Admissions Popup */}
+      {isAdmissionsPopupOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl max-w-md w-full">
+            <div className="p-4 sm:p-6">
+              <div className="flex justify-between items-center mb-4 sm:mb-6">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Visit Your Nearest Location</h2>
+                <button
+                  onClick={() => setIsAdmissionsPopupOpen(false)}
+                  className="text-gray-400 hover:text-gray-600 transition-colors"
+                >
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+
+              <p className="text-gray-600 mb-6 text-center">
+                Visit any of our branches to complete your admission process
+              </p>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    name: 'Jamkhandi',
+                    address: 'Main Road, Jamkhandi',
+                    phone: '+91 98765 43210',
+                    status: 'Coming Soon'
+                  },
+                  {
+                    name: 'Athani',
+                    address: 'Education Street, Athani',
+                    phone: '+91 98765 43211',
+                    status: 'Coming Soon'
+                  },
+                  {
+                    name: 'Harugeri',
+                    address: 'School Road, Harugeri',
+                    phone: '+91 98765 43212',
+                    status: 'Coming Soon'
+                  },
+                  {
+                    name: 'Badami',
+                    address: 'Heritage Lane, Badami',
+                    phone: '+91 98765 43213',
+                    status: 'Coming Soon'
+                  }
+                ].map((branch, index) => (
+                  <div key={index} className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                      <Building className="w-5 h-5 text-blue-600" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-gray-900">{branch.name}</h3>
+                      <p className="text-sm text-gray-600">{branch.address}</p>
+                      <p className="text-sm text-gray-600">{branch.phone}</p>
+                    </div>
+                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                      branch.status === 'Open' 
+                        ? 'bg-green-100 text-green-800' 
+                        : 'bg-yellow-100 text-yellow-800'
+                    }`}>
+                      {branch.status}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 pt-6">
+                <button
+                  onClick={() => setIsAdmissionsPopupOpen(false)}
+                  className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm sm:text-base"
+                >
+                  Close
+                </button>
+                <button
+                  onClick={() => {
+                    setIsAdmissionsPopupOpen(false);
+                    setIsBookingModalOpen(true);
+                  }}
+                  className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
+                >
+                  Book Demo First
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
 export default App;
