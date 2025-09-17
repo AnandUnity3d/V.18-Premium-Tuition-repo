@@ -1038,10 +1038,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                             Are classes in Local languages or English?
                           </h4>
                           <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                            <div className="flex items-start">
                             
-                              <p className="text-gray-700">We offer content and teaching in both <strong>Local languages and English medium</strong>.</p>
-                            </div>
                           </div>
                         </div>
                       </div>
