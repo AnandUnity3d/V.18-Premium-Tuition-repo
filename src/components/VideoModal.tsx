@@ -1,6 +1,5 @@
 import React from 'react';
 import { X, Play } from 'lucide-react';
-import videoFile from './video.mp4';
 
 interface VideoModalProps {
   isOpen: boolean;
@@ -25,9 +24,11 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
             className="w-full h-full object-cover"
             controls
             autoPlay
+            muted
+            playsInline
             poster="https://images.pexels.com/photos/5212361/pexels-photo-5212361.jpeg?auto=compress&cs=tinysrgb&w=1200"
           >
-            <source src={videoFile} type="video/mp4" />
+            <source src="/src/components/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           
