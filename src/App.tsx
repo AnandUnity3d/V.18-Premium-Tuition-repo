@@ -589,16 +589,16 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               <h3 className="text-2xl font-bold text-white mb-6 text-center">Schedule</h3>
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div className="p-6 bg-white/20 backdrop-blur-sm rounded-lg">
-                  <h4 className="font-semibold text-white mb-2">Weekday Tuition</h4>
+                  <h4 className="font-semibold text-white mb-2">Weekday Courses</h4>
                   <p className="text-white/80">Morning & Evening classes</p>
                 </div>
                 <div className="p-6 bg-white/20 backdrop-blur-sm rounded-lg">
                   <h4 className="font-semibold text-white mb-2">Holiday Courses</h4>
-                  <p className="text-white/80">Intensive crash courses</p>
+                  <p className="text-white/80">Full day classes</p>
                 </div>
                 <div className="p-6 bg-white/20 backdrop-blur-sm rounded-lg">
-                  <h4 className="font-semibold text-white mb-2">Weekend classes</h4>
-                  <p className="text-white/80">Experiments</p>
+                  <h4 className="font-semibold text-white mb-2">Weekend Courses</h4>
+                  <p className="text-white/80">Full day classes</p>
                 </div>
               </div>
             </div>
