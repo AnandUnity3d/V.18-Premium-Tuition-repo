@@ -511,19 +511,10 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-gray-600 mb-6">Advanced concepts with visual learning</p>
                 <div className="space-y-4 mb-8">
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Subjects</h4>
                     <p className="text-gray-600">Math, Chemistry, Physics, Biology</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">AR Modules</h4>
-                    <p className="text-gray-600">Human tissues, Motion simulation, Atomic structures</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Focus</h4>
-                    <p className="text-gray-600">Diagrams, numerical practice, memory tricks</p>
                   </div>
                 </div>
                 <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
