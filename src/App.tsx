@@ -751,6 +751,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:bg-blue-200 transition-colors">
                     <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
                   </div>
+                onClick={() => setSelectedBranch(location)}
                   <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">{branch.name}</h3>
                   <p className="text-sm sm:text-base text-gray-600 mb-2">{branch.address}</p>
                   <p className="text-sm sm:text-base text-gray-600 mb-3">{branch.phone}</p>
@@ -758,7 +759,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     branch.status === 'Open' 
                       ? 'bg-green-100 text-green-800' 
                       : 'bg-yellow-100 text-yellow-800'
-                  }`}>
+                <div className="flex items-center text-blue-600 hover:text-blue-700 transition-colors pointer-events-none">
                     {branch.status}
                   </span>
                 </div>
