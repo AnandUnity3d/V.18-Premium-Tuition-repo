@@ -1109,7 +1109,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                               <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                                 <span className="text-white font-bold text-sm">A</span>
                               </div>
-                              <p className="text-gray-700"><strong>No.</strong> We provide the devices at the center. <em>Optional:</em> students can access limited content via the app at home.</p>
+                      
                             </div>
                           </div>
                         </div>
