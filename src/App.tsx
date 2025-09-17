@@ -750,17 +750,17 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 <div className="text-center">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:bg-blue-200 transition-colors">
                     <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
-                className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer transform hover:scale-105 p-4"
+                  </div>
                   <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">{branch.name}</h3>
                   <p className="text-sm sm:text-base text-gray-600 mb-2">{branch.address}</p>
-                <div className="flex items-center mb-3">
-                  <MapPin className="w-5 h-5 text-blue-600 mr-2" />
-                  <h3 className="text-lg font-bold text-gray-900">{location.name}</h3>
+                  <p className="text-sm sm:text-base text-gray-600 mb-3">{branch.phone}</p>
+                  <span className={`inline-block px-3 py-1 rounded-full text-xs sm:text-sm font-medium ${
+                    branch.status === 'Open' 
                       ? 'bg-green-100 text-green-800' 
-                <p className="text-gray-600 mb-3 text-sm">{location.students} Students</p>
-                <div className="flex items-center text-blue-600 font-medium text-sm">
+                      : 'bg-yellow-100 text-yellow-800'
+                  }`}>
                     {branch.status}
-                  <ChevronRight className="w-3 h-3 ml-1" />
+                  </span>
                 </div>
               </div>
             ))}
