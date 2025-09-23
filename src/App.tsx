@@ -523,10 +523,6 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </div>
                 <button 
                   className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
-                  onClick={() => {
-                    setSelectedClass('Class 12');
-                    setIsSimplePopupOpen(true);
-                  }}
                   onClick={() => openSimplePopup('Class 9')}>
                   Learn More
                 </button>
@@ -1054,8 +1050,8 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
       {/* Admissions Popup */}
       {isAdmissionsPopupOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl max-w-md w-full">
-            <div className="p-4 sm:p-6">
+          <div className="bg-white rounded-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-6">
               <div className="flex justify-between items-center mb-4 sm:mb-6">
                 <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Visit Your Nearest Location</h2>
                 <button
