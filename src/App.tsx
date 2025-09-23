@@ -28,7 +28,6 @@ function App() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
   const [isSimplePopupOpen, setIsSimplePopupOpen] = useState(false);
-  const [selectedClass, setSelectedClass] = useState('');
 
   const closeSimplePopup = () => {
     setIsSimplePopupOpen(false);
