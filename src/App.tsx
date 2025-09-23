@@ -970,7 +970,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   <Mail className="h-6 w-6 text-orange-500 mr-3 mt-1" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-gray-300">anandbiradar002@gmail.com</p>
+                    <p className="text-gray-300">v18premiumtuition@gmail.com</p>
                   </div>
                 </div>
               </div>
