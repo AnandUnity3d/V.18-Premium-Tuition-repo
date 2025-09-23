@@ -1301,10 +1301,44 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               </div>
               
               {selectedBranch.status === 'Open' && (
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-gray-900 mb-2">Operating Hours</h3>
-                  <p className="text-gray-600">Monday - Saturday: 9:00 AM - 8:00 PM</p>
-                  <p className="text-gray-600">Sunday: 10:00 AM - 6:00 PM</p>
+                <div className="space-y-4">
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h3 className="font-semibold text-gray-900 mb-2">Operating Hours</h3>
+                    <p className="text-gray-600">Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                    <p className="text-gray-600">Sunday: 10:00 AM - 6:00 PM</p>
+                  </div>
+                  
+                  <div className="bg-green-50 p-4 rounded-lg">
+                    <h3 className="font-semibold text-gray-900 mb-3">Our Expert Teachers</h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <div>
+                          <h4 className="font-medium text-gray-900">Dr. Priya Sharma</h4>
+                          <p className="text-sm text-gray-600">Mathematics & Physics Specialist</p>
+                          <p className="text-xs text-gray-500">15+ years experience, IIT graduate</p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <div>
+                          <h4 className="font-medium text-gray-900">Prof. Rajesh Kumar</h4>
+                          <p className="text-sm text-gray-600">Chemistry & Biology Expert</p>
+                          <p className="text-xs text-gray-500">12+ years experience, Gold medalist</p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <div>
+                          <h4 className="font-medium text-gray-900">Ms. Anita Reddy</h4>
+                          <p className="text-sm text-gray-600">English & Social Studies</p>
+                          <p className="text-xs text-gray-500">10+ years experience, M.Ed qualified</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )}
               
