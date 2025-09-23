@@ -13,11 +13,6 @@ function App() {
   const [isSimplePopupOpen, setIsSimplePopupOpen] = useState(false);
   const [selectedClass, setSelectedClass] = useState('');
 
-  const openSimplePopup = (className) => {
-    setSelectedClass(className);
-    setIsSimplePopupOpen(true);
-  };
-
   const closeSimplePopup = () => {
     setIsSimplePopupOpen(false);
     setSelectedClass('');
@@ -460,10 +455,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Science, Mathematics, English</p>
                   </div>
                 </div>
-                <button
-                  onClick={() => openSimplePopup('Class 8')}
-                  className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors font-medium"
-                >
+                <button className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors font-medium">
                   Learn More
                 </button>
               </div>
@@ -494,10 +486,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Science, Mathematics, English</p>
                   </div>
                 </div>
-                <button
-                  onClick={() => openSimplePopup('Class 9')}
-                  className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
-                >
+                <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
                   Learn More
                 </button>
               </div>
@@ -528,10 +517,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Science, Mathematics, English</p>
                   </div>
                 </div>
-                <button
-                  onClick={() => openSimplePopup('Class 10')}
-                  className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium"
-                >
+                <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
                   Learn More
                 </button>
               </div>
@@ -561,10 +547,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Mathematics, Chemistry, Physics, Biology</p>
                   </div>
                 </div>
-                <button
-                  onClick={() => openSimplePopup('Class 11')}
-                  className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
-                >
+                <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
                   Learn More
                 </button>
               </div>
@@ -595,10 +578,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Mathematics, Chemistry, Physics, Biology</p>
                   </div>
                 </div>
-                <button
-                  onClick={() => openSimplePopup('Class 12')}
-                  className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
-                >
+                <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
                   Learn More
                 </button>
               </div>
@@ -1111,7 +1091,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           </div>
         </div>
       )}
-
+      
       {/* Simple Popup Modal */}
       {isSimplePopupOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
