@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GraduationCap, Play, BookOpen, Users, Award, MapPin, Phone, Mail, Clock, CheckCircle, Star, Globe, Zap, Shield, Target, TrendingUp, Brain, Smartphone, Menu, X, ArrowRight } from 'lucide-react';
+import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
@@ -28,7 +28,6 @@ function App() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
   const [isSimplePopupOpen, setIsSimplePopupOpen] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isBranchPopupOpen, setIsBranchPopupOpen] = useState(false);
   const [selectedBranch, setSelectedBranch] = useState<any>(null);
 
@@ -69,58 +68,7 @@ function App() {
               <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
               <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
             </nav>
-            
-            {/* Mobile menu button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-md text-gray-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
-            >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
           </div>
-          
-          {/* Mobile menu */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
-                <a
-                  href="#about"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 text-gray-600 hover:text-orange-500 hover:bg-gray-50 font-medium transition-colors rounded-md"
-                >
-                  About
-                </a>
-                <a
-                  href="#programs"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 text-gray-600 hover:text-orange-500 hover:bg-gray-50 font-medium transition-colors rounded-md"
-                >
-                  Programs
-                </a>
-                <a
-                  href="#technology"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 text-gray-600 hover:text-orange-500 hover:bg-gray-50 font-medium transition-colors rounded-md"
-                >
-                  Technology
-                </a>
-                <a
-                  href="#admissions"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 text-gray-600 hover:text-orange-500 hover:bg-gray-50 font-medium transition-colors rounded-md"
-                >
-                  Admissions
-                </a>
-                <a
-                  href="#contact"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 text-gray-600 hover:text-orange-500 hover:bg-gray-50 font-medium transition-colors rounded-md"
-                >
-                  Contact
-                </a>
-              </div>
-            </div>
-          )}
         </div>
       </header>
 
