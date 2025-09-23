@@ -206,9 +206,8 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About V.18</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               At V.18, we believe that every student deserves access to world-class, future-ready education — no matter where they live. Developed by V.18, a leader in educational innovation and immersive technology, we deliver tech-enabled, interactive learning that makes every subject easy to understand, enjoyable, and effective for all types of learners. 
-              
-              "Simplify the Imagination"
             </p>
+            <h3> "Simplify the Imagination"</h3>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
