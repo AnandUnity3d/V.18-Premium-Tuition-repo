@@ -132,8 +132,6 @@ export default function App() {
     setIsCourseModalOpen(false);
     setSelectedCourse(null);
   };
-  const [isCourseModalOpen, setIsCourseModalOpen] = useState(false);
-  const [selectedCourse, setSelectedCourse] = useState<any>(null);
 
   const courseData = {
     'Class 8': {
