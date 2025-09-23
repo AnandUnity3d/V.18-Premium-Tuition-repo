@@ -1254,6 +1254,88 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           </div>
         </div>
       )}
+
+      {/* Branch Popup */}
+      {isBranchPopupOpen && selectedBranch && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl max-w-md w-full p-6">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-bold text-gray-900">{selectedBranch.name} Branch</h2>
+              <button
+                onClick={closeBranchPopup}
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <MapPin className="w-5 h-5 text-blue-600 mr-3" />
+                <div>
+                  <p className="font-semibold text-gray-900">Address</p>
+                  <p className="text-gray-600">{selectedBranch.address}</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center">
+                <Phone className="w-5 h-5 text-blue-600 mr-3" />
+                <div>
+                  <p className="font-semibold text-gray-900">Phone</p>
+                  <p className="text-gray-600">{selectedBranch.phone}</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center">
+                <Clock className="w-5 h-5 text-blue-600 mr-3" />
+                <div>
+                  <p className="font-semibold text-gray-900">Status</p>
+                  <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
+                    selectedBranch.status === 'Open' 
+                      ? 'bg-green-100 text-green-800' 
+                      : 'bg-yellow-100 text-yellow-800'
+                  }`}>
+                    {selectedBranch.status}
+                  </span>
+                </div>
+              </div>
+              
+              {selectedBranch.status === 'Open' && (
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-gray-900 mb-2">Operating Hours</h3>
+                  <p className="text-gray-600">Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                  <p className="text-gray-600">Sunday: 10:00 AM - 6:00 PM</p>
+                </div>
+              )}
+              
+              {selectedBranch.status === 'Coming Soon' && (
+                <div className="bg-yellow-50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-gray-900 mb-2">Opening Soon</h3>
+                  <p className="text-gray-600">We're working hard to bring quality education to {selectedBranch.name}. Stay tuned for updates!</p>
+                </div>
+              )}
+              
+              <div className="flex space-x-3 pt-4">
+                <button
+                  onClick={() => {
+                    closeBranchPopup();
+                    setIsBookingModalOpen(true);
+                  }}
+                  className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  Book Demo
+                </button>
+                <button
+                  onClick={closeBranchPopup}
+                  className="flex-1 border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
