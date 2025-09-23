@@ -8,6 +8,23 @@ import videoFile from './components/video.mp4';
 
 function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+  const [isLearnMoreOpen, setIsLearnMoreOpen] = useState(false);
+  const [selectedClass, setSelectedClass] = useState('');
+
+  const openLearnMore = (className: string) => {
+    setSelectedClass(className);
+    setIsLearnMoreOpen(true);
+  };
+
+  const closeLearnMore = () => {
+    setIsLearnMoreOpen(false);
+    setSelectedClass('');
+  };
+
+  const handleBookDemo = () => {
+    setIsLearnMoreOpen(false);
+    setIsBookingModalOpen(true);
+  };
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
   const [isSimplePopupOpen, setIsSimplePopupOpen] = useState(false);
@@ -727,7 +744,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     Book Free Demo
                   </button>
                   <button
-                    onClick={() => setIsAdmissionsPopupOpen(true)}
+                    onClick={() => openLearnMore('Class 11')}
                     className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center"
                   >
                     Apply Now
@@ -1137,6 +1154,67 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </button>
                 <button
                   onClick={closeSimplePopup}
+                  className="flex-1 border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      
+      {/* Simple Learn More Popup */}
+      {isLearnMoreOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl max-w-md w-full p-6">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold text-gray-900">{selectedClass} Program</h2>
+              <button
+                onClick={closeLearnMore}
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            
+            <div className="space-y-4">
+              <p className="text-gray-600">
+                Experience the future of education with our {selectedClass} program featuring:
+              </p>
+              
+              <ul className="space-y-2">
+                <li className="flex items-center text-gray-700">
+                  <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
+                  3D Interactive Learning
+                </li>
+                <li className="flex items-center text-gray-700">
+                  <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
+                  AR/VR Technology
+                </li>
+                <li className="flex items-center text-gray-700">
+                  <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
+                  Local Language Support
+                </li>
+                <li className="flex items-center text-gray-700">
+                  <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
+                  Expert Faculty
+                </li>
+                <li className="flex items-center text-gray-700">
+                  <CheckCircle className="w-4 h-4 mr-2 text-green-500" />
+                  Small Batch Size
+                </li>
+              </ul>
+              
+              <div className="flex space-x-3 pt-4">
+                <button
+                  onClick={handleBookDemo}
+                  className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  Book Free Demo
+                </button>
+                <button
+                  onClick={closeLearnMore}
                   className="flex-1 border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
                 >
                   Close
