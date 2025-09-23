@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GraduationCap, Users, Smartphone, MapPin, Phone, Mail, BookOpen, Brain, Award, Star, ArrowRight, Play, CheckCircle, Zap, Heart, Eye, Atom, Target, Building, X, User } from 'lucide-react';
 import BookingModal from './components/BookingModal';
+import CourseModal from './components/CourseModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
 import techImage from './cc.jpeg';
@@ -9,6 +10,126 @@ import videoFile from './components/video.mp4';
 
 function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+  const [isCourseModalOpen, setIsCourseModalOpen] = useState(false);
+  const [selectedCourse, setSelectedCourse] = useState<any>(null);
+
+  const courseData = {
+    'Class 8': {
+      class: 'Class 8',
+      title: 'Foundation Building Program',
+      subjects: ['Mathematics', 'Science', 'English', 'Social Studies', 'Kannada/Hindi'],
+      duration: '10 months',
+      batchSize: '15-20 students',
+      features: [
+        '3D Interactive Learning',
+        'Bilingual Teaching',
+        'Regular Assessments',
+        'Parent-Teacher Meetings',
+        'Study Materials Included'
+      ],
+      description: 'Build a strong foundation with our comprehensive Class 8 program. We focus on conceptual clarity and practical understanding through immersive 3D technology.',
+      highlights: [
+        'Introduction to advanced mathematical concepts',
+        'Basic scientific principles through virtual experiments',
+        'Language skills development in both English and local languages',
+        'Interactive social studies with historical simulations',
+        'Regular doubt clearing sessions'
+      ]
+    },
+    'Class 9': {
+      class: 'Class 9',
+      title: 'Pre-Board Preparation Program',
+      subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'English', 'Social Studies'],
+      duration: '10 months',
+      batchSize: '12-18 students',
+      features: [
+        'AR/VR Science Labs',
+        'Advanced Problem Solving',
+        'Mock Tests',
+        'Individual Attention',
+        'Career Guidance'
+      ],
+      description: 'Prepare for board examinations with our intensive Class 9 program. Experience science through virtual reality and master mathematics with 3D visualizations.',
+      highlights: [
+        'Advanced algebra and geometry with 3D models',
+        'Virtual chemistry and physics laboratories',
+        'Biology concepts through immersive experiences',
+        'English literature and grammar enhancement',
+        'History and geography through virtual tours'
+      ]
+    },
+    'Class 10': {
+      class: 'Class 10',
+      title: 'Board Exam Excellence Program',
+      subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'English', 'Social Studies'],
+      duration: '12 months',
+      batchSize: '10-15 students',
+      features: [
+        'Board Exam Strategy',
+        'Previous Year Papers',
+        'Time Management',
+        'Stress Management',
+        'Result Guarantee'
+      ],
+      description: 'Achieve excellence in your board examinations with our proven Class 10 program. Comprehensive preparation with technology-enhanced learning.',
+      highlights: [
+        'Complete board syllabus coverage',
+        'Extensive practice with previous year questions',
+        'Advanced problem-solving techniques',
+        'Science practicals through VR simulations',
+        'English writing skills and literature analysis'
+      ]
+    },
+    'Class 11': {
+      class: 'Class 11',
+      title: 'Pre-University Foundation Program',
+      subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'Computer Science', 'English'],
+      duration: '12 months',
+      batchSize: '8-12 students',
+      features: [
+        'Stream Selection Guidance',
+        'Competitive Exam Prep',
+        'Advanced Concepts',
+        'Research Projects',
+        'University Preparation'
+      ],
+      description: 'Transition smoothly to higher secondary education with our comprehensive Class 11 program. Focus on building strong fundamentals for competitive exams.',
+      highlights: [
+        'Advanced calculus and analytical geometry',
+        'Complex physics concepts with 3D simulations',
+        'Organic and inorganic chemistry visualization',
+        'Molecular biology through virtual microscopy',
+        'Programming fundamentals and computer applications'
+      ]
+    },
+    'Class 12': {
+      class: 'Class 12',
+      title: 'University Entrance & Board Excellence',
+      subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'Computer Science', 'English'],
+      duration: '14 months',
+      batchSize: '6-10 students',
+      features: [
+        'JEE/NEET Preparation',
+        'Board Exam Excellence',
+        'University Applications',
+        'Scholarship Guidance',
+        'Career Counseling'
+      ],
+      description: 'Master your final year with our intensive Class 12 program. Dual preparation for board exams and competitive entrance tests.',
+      highlights: [
+        'Advanced mathematics for engineering entrance',
+        'Physics problem-solving for JEE/NEET',
+        'Organic chemistry mechanisms and reactions',
+        'Human physiology and genetics for medical entrance',
+        'Data structures and algorithms for computer science'
+      ]
+    }
+  };
+
+  const handleLearnMore = (className: string) => {
+    setSelectedCourse(courseData[className as keyof typeof courseData]);
+    setIsCourseModalOpen(true);
+  };
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
 
@@ -1085,6 +1206,11 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           </div>
         </div>
       )}
+      <CourseModal 
+        isOpen={isCourseModalOpen} 
+        onClose={() => setIsCourseModalOpen(false)}
+        courseData={selectedCourse || courseData['Class 8']}
+      />
     </div>
   );
 }
