@@ -1404,4 +1404,4 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                         </div>
                       </div>
                     </div>
-                  </div
+                  </div>
