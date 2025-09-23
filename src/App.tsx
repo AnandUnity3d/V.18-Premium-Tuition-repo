@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu, Globe } from 'lucide-react';
+import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
 import studentImage from './aa.jpg';
 import videoFile from './components/video.mp4';
-import { useLanguage } from './contexts/LanguageContext';
 
 function App() {
-  const { language, setLanguage, t } = useLanguage();
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isLearnMoreOpen, setIsLearnMoreOpen] = useState(false);
   const [selectedClass, setSelectedClass] = useState('');
@@ -67,28 +65,13 @@ function App() {
               <GraduationCap className="h-8 w-8 text-orange-500" />
               <span className="ml-2 text-xl font-bold text-gray-900">V.18 Premium Tuition</span>
             </div>
-            <div className="flex items-center space-x-4">
-              <nav className="hidden md:flex space-x-8">
-                <a href="#about" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">{t('nav.about')}</a>
-                <a href="#programs" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">{t('nav.programs')}</a>
-                <a href="#technology" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">{t('nav.technology')}</a>
-                <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">{t('nav.admissions')}</a>
-                <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">{t('nav.contact')}</a>
-              </nav>
-              
-              {/* Language Selector */}
-              <div className="relative">
-                <button
-                  onClick={() => setLanguage(language === 'en' ? 'kn' : 'en')}
-                  className="flex items-center space-x-2 px-3 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
-                >
-                  <Globe className="w-4 h-4 text-gray-600" />
-                  <span className="text-sm font-medium text-gray-700">
-                    {language === 'en' ? 'EN' : 'ಕನ್ನಡ'}
-                  </span>
-                </button>
-              </div>
-            </div>
+            <nav className="hidden md:flex space-x-8">
+              <a href="#about" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">About</a>
+              <a href="#programs" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Programs</a>
+              <a href="#technology" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Technology</a>
+              <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
+              <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
+            </nav>
             <button
               onClick={toggleMobileMenu}
               className="md:hidden text-gray-600 hover:text-orange-500 transition-colors"
@@ -106,35 +89,35 @@ function App() {
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
-                  {t('nav.about')}
+                  About
                 </a>
                 <a 
                   href="#programs" 
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
-                  {t('nav.programs')}
+                  Programs
                 </a>
                 <a 
                   href="#technology" 
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
-                  {t('nav.technology')}
+                  Technology
                 </a>
                 <a 
                   href="#admissions" 
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
-                  {t('nav.admissions')}
+                  Admissions
                 </a>
                 <a 
                   href="#contact" 
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
-                  {t('nav.contact')}
+                  Contact
                 </a>
               </nav>
             </div>
@@ -1402,11 +1385,35 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                             <p className="text-xs text-gray-500">10+ years experience, M.Ed qualified</p>
                           </div>
                         </div>
-                   </div>
-                  )}
-                 )}
+                      </div>
+                    </div>
                   </div>
                 )}
+                
+                {selectedBranch.status === 'Coming Soon' && (
+                  <div className="bg-yellow-50 p-4 rounded-lg">
+                    <h3 className="font-semibold text-gray-900 mb-2">Opening Soon</h3>
+                    <p className="text-gray-600">We're working hard to bring quality education to {selectedBranch.name}. Stay tuned for updates!</p>
+                  </div>
+                )}
+                
+                <div className="flex space-x-3 pt-4">
+                  <button
+                    onClick={() => {
+                      closeBranchPopup();
+                      setIsBookingModalOpen(true);
+                    }}
+                    className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    Book Demo
+                  </button>
+                  <button
+                    onClick={closeBranchPopup}
+                    className="flex-1 border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { X, User, Phone, Mail, BookOpen, Calendar, MapPin } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { EMAIL_CONFIG } from '../config/emailConfig';
-import { useLanguage } from '../contexts/LanguageContext';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -10,7 +9,6 @@ interface BookingModalProps {
 }
 
 export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
-  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     studentName: '',
     parentName: '',
@@ -81,7 +79,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
       <div className="bg-white rounded-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
         <div className="p-4 sm:p-6">
           <div className="flex justify-between items-center mb-4 sm:mb-6">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900">{t('booking.title')}</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Book Free Demo</h2>
             <button
               onClick={onClose}
               className="text-gray-400 hover:text-gray-600 transition-colors"
@@ -94,7 +92,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 <User className="w-4 h-4 inline mr-2" />
-                {t('booking.studentName')} *
+                Student Name *
               </label>
               <input
                 type="text"
@@ -103,14 +101,14 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 onChange={handleChange}
                 required
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
-                placeholder={t('booking.studentNamePlaceholder')}
+                placeholder="Enter student's full name"
               />
             </div>
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 <User className="w-4 h-4 inline mr-2" />
-                {t('booking.parentName')} *
+                Parent/Guardian Name *
               </label>
               <input
                 type="text"
@@ -119,14 +117,14 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 onChange={handleChange}
                 required
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
-                placeholder={t('booking.parentNamePlaceholder')}
+                placeholder="Enter parent's full name"
               />
             </div>
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 <Phone className="w-4 h-4 inline mr-2" />
-                {t('booking.phone')} *
+                Phone Number *
               </label>
               <input
                 type="tel"
@@ -135,14 +133,14 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 onChange={handleChange}
                 required
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
-                placeholder={t('booking.phonePlaceholder')}
+                placeholder="Enter 10-digit mobile number"
               />
             </div>
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 <Mail className="w-4 h-4 inline mr-2" />
-                {t('booking.email')}
+                Email Address
               </label>
               <input
                 type="email"
@@ -150,14 +148,14 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
-                placeholder={t('booking.emailOptional')}
+                placeholder="Enter email address (optional)"
               />
             </div>
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 <BookOpen className="w-4 h-4 inline mr-2" />
-                {t('booking.class')} *
+                Class *
               </label>
               <select
                 name="class"
@@ -166,7 +164,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 required
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
               >
-                <option value="">{t('booking.selectClass')}</option>
+                <option value="">Select Class</option>
                 <option value="Class 8">Class 8</option>
                 <option value="Class 9">Class 9</option>
                 <option value="Class 10">Class 10</option>
@@ -178,7 +176,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 <MapPin className="w-4 h-4 inline mr-2" />
-                {t('booking.location')} *
+                Nearest Location *
               </label>
               <select
                 name="location"
@@ -187,7 +185,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 required
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
               >
-                <option value="">{t('booking.selectLocation')}</option>
+                <option value="">Select Nearest Location</option>
                 <option value="Jamkhandi">Jamkhandi</option>
                 <option value="Athani">Athani</option>
                 <option value="Harugeri">Harugeri</option>
@@ -198,7 +196,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 <Calendar className="w-4 h-4 inline mr-2" />
-                {t('booking.preferredDate')} *
+                Preferred Date *
               </label>
               <input
                 type="date"
@@ -214,7 +212,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 <Calendar className="w-4 h-4 inline mr-2" />
-                {t('booking.preferredTime')} *
+                Preferred Time *
               </label>
               <select
                 name="preferredTime"
@@ -223,7 +221,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 required
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
               >
-                <option value="">{t('booking.selectTime')}</option>
+                <option value="">Select Time</option>
                 <option value="9:00 AM">9:00 AM</option>
                 <option value="10:00 AM">10:00 AM</option>
                 <option value="11:00 AM">11:00 AM</option>
@@ -241,13 +239,13 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 onClick={onClose}
                 className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm sm:text-base"
               >
-                {t('booking.cancel')}
+                Cancel
               </button>
               <button
                 type="submit"
                 className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
               >
-                {t('booking.submit')}
+                Book Demo
               </button>
             </div>
           </form>
