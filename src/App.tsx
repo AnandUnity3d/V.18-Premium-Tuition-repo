@@ -68,9 +68,7 @@ function App() {
               <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
               <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
             </nav>
-            <button onClick={() => setIsBookingModalOpen(true)} className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors font-medium">
-              Book Free Demo
-            </button>
+           
           </div>
         </div>
       </header>
