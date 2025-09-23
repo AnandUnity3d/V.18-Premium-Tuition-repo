@@ -1402,8 +1402,8 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                             <p className="text-xs text-gray-500">10+ years experience, M.Ed qualified</p>
                           </div>
                         </div>
-                      </div>
                    </div>
+                  )}
                  )}
                   </div>
                 )}
