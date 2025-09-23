@@ -68,7 +68,6 @@ function App() {
               <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
               <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
             </nav>
-           
           </div>
         </div>
       </header>
