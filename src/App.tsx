@@ -1266,7 +1266,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </button>
               </div>
               
-              {/* <div className="space-y-4">
+              <div className="space-y-4">
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-blue-600 mr-3" />
                   <div>
@@ -1295,7 +1295,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                       {selectedBranch.status}
                     </span>
                   </div>
-                </div> */}
+                </div> 
                 
                 {selectedBranch.status === 'Open' && (
                   <div className="space-y-4">
