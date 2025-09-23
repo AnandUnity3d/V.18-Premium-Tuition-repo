@@ -1211,6 +1211,13 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
         onClose={() => setIsCourseModalOpen(false)}
         courseData={selectedCourse || courseData['Class 8']}
       />
+      {selectedCourse && (
+        <CourseModal 
+          isOpen={!!selectedCourse} 
+          onClose={() => setSelectedCourse(null)} 
+          courseData={selectedCourse} 
+        />
+      )}
     </div>
   );
 }
