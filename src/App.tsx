@@ -3,7 +3,6 @@ import { Play, Users, Award, BookOpen, Phone, Mail, MapPin, Clock, Star, CheckCi
 import VideoModal from './components/VideoModal';
 import BookingModal from './components/BookingModal';
 import CourseModal from './components/CourseModal';
-import CourseModal from './components/CourseModal';
 
 export default function App() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
