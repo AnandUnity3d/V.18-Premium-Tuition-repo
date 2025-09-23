@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, BookOpen, Users, Award, CheckCircle, Star, MapPin, Phone, Mail, Clock, Calendar, X, User, Brain, GraduationCap, Smartphone, ArrowRight } from 'lucide-react';
+import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
@@ -523,6 +523,10 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 </div>
                 <button 
                   className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                  onClick={() => {
+                    setSelectedClass('Class 12');
+                    setIsSimplePopupOpen(true);
+                  }}
                   onClick={() => openSimplePopup('Class 9')}>
                   Learn More
                 </button>
@@ -794,105 +798,25 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 name: 'Jamkhandi',
                 address: 'Main Road, Jamkhandi',
                 phone: '+91 98765 43210',
-                status: 'Open',
-                teachers: [
-                  {
-                    name: 'Dr. Rajesh Kumar',
-                    subject: 'Mathematics',
-                    experience: '12 years',
-                    qualification: 'M.Sc Mathematics, B.Ed'
-                  },
-                  {
-                    name: 'Prof. Sunita Sharma',
-                    subject: 'Science',
-                    experience: '10 years',
-                    qualification: 'M.Sc Physics, B.Ed'
-                  },
-                  {
-                    name: 'Ms. Priya Reddy',
-                    subject: 'English',
-                    experience: '8 years',
-                    qualification: 'M.A English Literature, B.Ed'
-                  }
-                ]
+                status: 'Open'
               },
               {
                 name: 'Athani',
                 address: 'Education Street, Athani',
                 phone: '+91 98765 43211',
-                status: 'Coming Soon',
-                teachers: [
-                  {
-                    name: 'Mr. Arun Patil',
-                    subject: 'Mathematics',
-                    experience: '15 years',
-                    qualification: 'M.Sc Mathematics, M.Ed'
-                  },
-                  {
-                    name: 'Dr. Kavitha Nair',
-                    subject: 'Science',
-                    experience: '11 years',
-                    qualification: 'Ph.D Chemistry, B.Ed'
-                  },
-                  {
-                    name: 'Ms. Deepa Singh',
-                    subject: 'English',
-                    experience: '9 years',
-                    qualification: 'M.A English, TESOL Certified'
-                  }
-                ]
+                status: 'Coming Soon'
               },
               {
                 name: 'Harugeri',
                 address: 'School Road, Harugeri',
                 phone: '+91 98765 43212',
-                status: 'Coming Soon',
-                teachers: [
-                  {
-                    name: 'Prof. Mahesh Joshi',
-                    subject: 'Mathematics',
-                    experience: '14 years',
-                    qualification: 'M.Sc Applied Mathematics, B.Ed'
-                  },
-                  {
-                    name: 'Dr. Rekha Desai',
-                    subject: 'Science',
-                    experience: '13 years',
-                    qualification: 'Ph.D Biology, M.Ed'
-                  },
-                  {
-                    name: 'Mr. Vikram Rao',
-                    subject: 'English',
-                    experience: '7 years',
-                    qualification: 'M.A English Literature, CELTA'
-                  }
-                ]
+                status: 'Coming Soon'
               },
               {
                 name: 'Badami',
                 address: 'Heritage Lane, Badami',
                 phone: '+91 98765 43213',
-                status: 'Coming Soon',
-                teachers: [
-                  {
-                    name: 'Ms. Anita Kulkarni',
-                    subject: 'Mathematics',
-                    experience: '16 years',
-                    qualification: 'M.Sc Statistics, M.Ed'
-                  },
-                  {
-                    name: 'Prof. Suresh Gowda',
-                    subject: 'Science',
-                    experience: '12 years',
-                    qualification: 'M.Sc Physics, Ph.D (pursuing)'
-                  },
-                  {
-                    name: 'Dr. Meera Iyer',
-                    subject: 'English',
-                    experience: '10 years',
-                    qualification: 'Ph.D English Literature, B.Ed'
-                  }
-                ]
+                status: 'Coming Soon'
               }
             ].map((branch, index) => (
               <div 
@@ -1334,32 +1258,39 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
       {/* Branch Popup */}
       {isBranchPopupOpen && selectedBranch && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div className="p-6">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-bold text-gray-900">{selectedBranch.name} Branch</h2>
-                <button
-                  onClick={closeBranchPopup}
-                  className="text-gray-400 hover:text-gray-600 transition-colors"
-                >
-                  <X className="w-6 h-6" />
-                </button>
+          <div className="bg-white rounded-xl max-w-md w-full p-6">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-bold text-gray-900">{selectedBranch.name} Branch</h2>
+              <button
+                onClick={closeBranchPopup}
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <MapPin className="w-5 h-5 text-blue-600 mr-3" />
+                <div>
+                  <p className="font-semibold text-gray-900">Address</p>
+                  <p className="text-gray-600">{selectedBranch.address}</p>
+                </div>
               </div>
-
-              <div className="space-y-6">
-                <div className="flex items-center text-gray-600">
-                  <MapPin className="w-5 h-5 mr-3 text-blue-600" />
-                  <span>{selectedBranch.address}</span>
+              
+              <div className="flex items-center">
+                <Phone className="w-5 h-5 text-blue-600 mr-3" />
+                <div>
+                  <p className="font-semibold text-gray-900">Phone</p>
+                  <p className="text-gray-600">{selectedBranch.phone}</p>
                 </div>
-                
-                <div className="flex items-center text-gray-600">
-                  <Phone className="w-5 h-5 mr-3 text-blue-600" />
-                  <span>{selectedBranch.phone}</span>
-                </div>
-                
-                <div className="flex items-center">
-                  <Clock className="w-5 h-5 mr-3 text-blue-600" />
-                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+              </div>
+              
+              <div className="flex items-center">
+                <Clock className="w-5 h-5 text-blue-600 mr-3" />
+                <div>
+                  <p className="font-semibold text-gray-900">Status</p>
+                  <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
                     selectedBranch.status === 'Open' 
                       ? 'bg-green-100 text-green-800' 
                       : 'bg-yellow-100 text-yellow-800'
@@ -1367,51 +1298,39 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     {selectedBranch.status}
                   </span>
                 </div>
-
-                {/* Teachers Section */}
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                    <GraduationCap className="w-5 h-5 mr-2 text-blue-600" />
-                    Our Expert Teachers
-                  </h3>
-                  <div className="grid gap-4">
-                    {selectedBranch.teachers.map((teacher, index) => (
-                      <div key={index} className="bg-gray-50 p-4 rounded-lg">
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <h4 className="font-semibold text-gray-900">{teacher.name}</h4>
-                            <p className="text-blue-600 font-medium">{teacher.subject}</p>
-                            <p className="text-sm text-gray-600 mt-1">{teacher.qualification}</p>
-                            <p className="text-sm text-gray-500 mt-1">Experience: {teacher.experience}</p>
-                          </div>
-                          <div className="ml-4">
-                            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                              <User className="w-6 h-6 text-blue-600" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+              </div>
+              
+              {selectedBranch.status === 'Open' && (
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-gray-900 mb-2">Operating Hours</h3>
+                  <p className="text-gray-600">Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                  <p className="text-gray-600">Sunday: 10:00 AM - 6:00 PM</p>
                 </div>
-
-                <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                  <button
-                    onClick={() => {
-                      closeBranchPopup();
-                      setIsBookingModalOpen(true);
-                    }}
-                    className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                  >
-                    Book Demo
-                  </button>
-                  <button
-                    onClick={closeBranchPopup}
-                    className="flex-1 border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
-                  >
-                    Close
-                  </button>
+              )}
+              
+              {selectedBranch.status === 'Coming Soon' && (
+                <div className="bg-yellow-50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-gray-900 mb-2">Opening Soon</h3>
+                  <p className="text-gray-600">We're working hard to bring quality education to {selectedBranch.name}. Stay tuned for updates!</p>
                 </div>
+              )}
+              
+              <div className="flex space-x-3 pt-4">
+                <button
+                  onClick={() => {
+                    closeBranchPopup();
+                    setIsBookingModalOpen(true);
+                  }}
+                  className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  Book Demo
+                </button>
+                <button
+                  onClick={closeBranchPopup}
+                  className="flex-1 border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  Close
+                </button>
               </div>
             </div>
           </div>
