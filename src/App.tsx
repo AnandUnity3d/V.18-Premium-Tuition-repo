@@ -1267,7 +1267,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               </div>
               
               <div className="space-y-4">
-               {/* <div className="flex items-center">
+                <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-blue-600 mr-3" />
                   <div>
                     <p className="font-semibold text-gray-900">Address</p>
@@ -1275,13 +1275,13 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   </div>
                 </div>
                 
-                  <div className="flex items-center">
+                <div className="flex items-center">
                   <Phone className="w-5 h-5 text-blue-600 mr-3" />
                   <div>
                     <p className="font-semibold text-gray-900">Phone</p>
                     <p className="text-gray-600">{selectedBranch.phone}</p>
                   </div>
-                </div> 
+                </div>
                 
                 <div className="flex items-center">
                   <Clock className="w-5 h-5 text-blue-600 mr-3" />
@@ -1294,7 +1294,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     }`}>
                       {selectedBranch.status}
                     </span>
-                  </div>*/}
+                  </div>
                 </div> 
                 
                 {selectedBranch.status === 'Open' && (
