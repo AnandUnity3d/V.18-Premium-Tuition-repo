@@ -1077,7 +1077,55 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   }}
                   className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
                 >
-                  Book Demo First
+      
+      {/* Simple Popup Modal */}
+      {isSimplePopupOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl max-w-md w-full p-6">
+            <div className="flex justify-between items-center mb-4">
+              <div className="flex items-center">
+                <GraduationCap className="w-6 h-6 text-blue-600 mr-2" />
+                <h2 className="text-xl font-bold text-gray-900">{selectedClass} Information</h2>
+              </div>
+              <button
+                onClick={closeSimplePopup}
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            
+            <div className="space-y-4">
+              <p className="text-gray-600">
+                Discover our comprehensive {selectedClass} program with immersive 3D learning technology.
+              </p>
+              
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h3 className="font-semibold text-gray-900 mb-2">Key Features:</h3>
+                <ul className="space-y-1 text-sm text-gray-600">
+                  <li>• Interactive 3D Learning</li>
+                  <li>• AR/VR Technology</li>
+                  <li>• Expert Faculty</li>
+                  <li>• Small Batch Size</li>
+                  <li>• Local Language Support</li>
+                </ul>
+              </div>
+              
+              <div className="flex space-x-3">
+                <button
+                  onClick={() => {
+                    closeSimplePopup();
+                    setIsBookingModalOpen(true);
+                  }}
+                  className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  Book Demo
+                </button>
+                <button
+                  onClick={closeSimplePopup}
+                  className="flex-1 border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  Close
                 </button>
               </div>
             </div>
