@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GraduationCap, Play, BookOpen, Users, Award, Star, MapPin, Phone, Mail, Clock, CheckCircle, Menu, X, Brain } from 'lucide-react';
+import { GraduationCap, Play, Users, Award, BookOpen, Clock, MapPin, Phone, Mail, Star, ChevronRight, Menu, X, Brain, Smartphone } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
