@@ -29,6 +29,11 @@ function App() {
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
   const [isSimplePopupOpen, setIsSimplePopupOpen] = useState(false);
 
+  const openSimplePopup = (className: string) => {
+    setSelectedClass(className);
+    setIsSimplePopupOpen(true);
+  };
+
   const closeSimplePopup = () => {
     setIsSimplePopupOpen(false);
     setSelectedClass('');
@@ -471,7 +476,9 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Science, Mathematics, English</p>
                   </div>
                 </div>
-                <button className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors font-medium">
+                <button 
+                  className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors font-medium"
+                  onClick={() => openSimplePopup('Class 8')}>
                   Learn More
                 </button>
               </div>
