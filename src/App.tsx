@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap } from 'lucide-react';
+import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
@@ -10,6 +10,18 @@ function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isAdmissionsPopupOpen, setIsAdmissionsPopupOpen] = useState(false);
+  const [isSimplePopupOpen, setIsSimplePopupOpen] = useState(false);
+  const [selectedClass, setSelectedClass] = useState('');
+
+  const openSimplePopup = (className) => {
+    setSelectedClass(className);
+    setIsSimplePopupOpen(true);
+  };
+
+  const closeSimplePopup = () => {
+    setIsSimplePopupOpen(false);
+    setSelectedClass('');
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -448,7 +460,10 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Science, Mathematics, English</p>
                   </div>
                 </div>
-                <button className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors font-medium">
+                <button
+                  onClick={() => openSimplePopup('Class 8')}
+                  className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors font-medium"
+                >
                   Learn More
                 </button>
               </div>
@@ -479,7 +494,10 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Science, Mathematics, English</p>
                   </div>
                 </div>
-                <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
+                <button
+                  onClick={() => openSimplePopup('Class 9')}
+                  className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                >
                   Learn More
                 </button>
               </div>
@@ -510,7 +528,10 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Science, Mathematics, English</p>
                   </div>
                 </div>
-                <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
+                <button
+                  onClick={() => openSimplePopup('Class 10')}
+                  className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium"
+                >
                   Learn More
                 </button>
               </div>
@@ -540,7 +561,10 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Mathematics, Chemistry, Physics, Biology</p>
                   </div>
                 </div>
-                <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
+                <button
+                  onClick={() => openSimplePopup('Class 11')}
+                  className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                >
                   Learn More
                 </button>
               </div>
@@ -571,7 +595,10 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Mathematics, Chemistry, Physics, Biology</p>
                   </div>
                 </div>
-                <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
+                <button
+                  onClick={() => openSimplePopup('Class 12')}
+                  className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                >
                   Learn More
                 </button>
               </div>
@@ -1077,7 +1104,14 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   }}
                   className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
                 >
-      
+                  Book Demo First
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Simple Popup Modal */}
       {isSimplePopupOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
@@ -1132,7 +1166,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           </div>
         </div>
       )}
-
+    </div>
   );
 }
 
