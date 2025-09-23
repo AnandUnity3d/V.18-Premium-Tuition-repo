@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building } from 'lucide-react';
+import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
@@ -30,6 +30,7 @@ function App() {
   const [isSimplePopupOpen, setIsSimplePopupOpen] = useState(false);
   const [isBranchPopupOpen, setIsBranchPopupOpen] = useState(false);
   const [selectedBranch, setSelectedBranch] = useState<any>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const openSimplePopup = (className: string) => {
     setSelectedClass(className);
@@ -51,6 +52,9 @@ function App() {
     setSelectedBranch(null);
   };
 
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -68,7 +72,56 @@ function App() {
               <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
               <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
             </nav>
+            <button
+              onClick={toggleMobileMenu}
+              className="md:hidden text-gray-600 hover:text-orange-500 transition-colors"
+            >
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
+          
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden bg-white border-t border-gray-200">
+              <nav className="px-4 py-4 space-y-3">
+                <a 
+                  href="#about" 
+                  onClick={closeMobileMenu}
+                  className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
+                >
+                  About
+                </a>
+                <a 
+                  href="#programs" 
+                  onClick={closeMobileMenu}
+                  className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
+                >
+                  Programs
+                </a>
+                <a 
+                  href="#technology" 
+                  onClick={closeMobileMenu}
+                  className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
+                >
+                  Technology
+                </a>
+                <a 
+                  href="#admissions" 
+                  onClick={closeMobileMenu}
+                  className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
+                >
+                  Admissions
+                </a>
+                <a 
+                  href="#contact" 
+                  onClick={closeMobileMenu}
+                  className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
+                >
+                  Contact
+                </a>
+              </nav>
+            </div>
+          )}
         </div>
       </header>
 
