@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu } from 'lucide-react';
+import { useLanguage } from './contexts/LanguageContext';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
@@ -7,6 +8,7 @@ import studentImage from './aa.jpg';
 import videoFile from './components/video.mp4';
 
 function App() {
+  const { language, setLanguage, t } = useLanguage();
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isLearnMoreOpen, setIsLearnMoreOpen] = useState(false);
   const [selectedClass, setSelectedClass] = useState('');
@@ -66,11 +68,11 @@ function App() {
               <span className="ml-2 text-xl font-bold text-gray-900">V.18 Premium Tuition</span>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#about" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">About</a>
-              <a href="#programs" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Programs</a>
-              <a href="#technology" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Technology</a>
-              <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
-              <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
+              <a href="#about" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">{t('nav.about')}</a>
+              <a href="#programs" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">{t('nav.programs')}</a>
+              <a href="#technology" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">{t('nav.technology')}</a>
+              <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">{t('nav.admissions')}</a>
+              <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">{t('nav.contact')}</a>
             </nav>
             <button
               onClick={toggleMobileMenu}
@@ -89,35 +91,35 @@ function App() {
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
-                  About
+                  {t('nav.about')}
                 </a>
                 <a 
                   href="#programs" 
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
-                  Programs
+                  {t('nav.programs')}
                 </a>
                 <a 
                   href="#technology" 
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
-                  Technology
+                  {t('nav.technology')}
                 </a>
                 <a 
                   href="#admissions" 
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
-                  Admissions
+                  {t('nav.admissions')}
                 </a>
                 <a 
                   href="#contact" 
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
-                  Contact
+                  {t('nav.contact')}
                 </a>
               </nav>
             </div>
