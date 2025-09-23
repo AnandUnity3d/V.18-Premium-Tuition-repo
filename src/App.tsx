@@ -509,7 +509,9 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     <p className="text-gray-600">Science, Mathematics, English</p>
                   </div>
                 </div>
-                <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
+                <button 
+                  className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                  onClick={() => openSimplePopup('Class 9')}>
                   Learn More
                 </button>
               </div>
