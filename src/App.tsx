@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu } from 'lucide-react';
+import { Menu, X, Play, Phone, Mail, MapPin, Clock, Users, Award, CheckCircle, BookOpen, Globe, ArrowRight, Star, Zap, Shield, Target, Languages } from 'lucide-react';
 import { useLanguage } from './contexts/LanguageContext';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
 import studentImage from './aa.jpg';
 import videoFile from './components/video.mp4';
-
+  const { language, setLanguage, t } = useLanguage();
 function App() {
   const { language, setLanguage, t } = useLanguage();
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
@@ -33,6 +33,10 @@ function App() {
   const [isBranchPopupOpen, setIsBranchPopupOpen] = useState(false);
   const [selectedBranch, setSelectedBranch] = useState<any>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'kn' : 'en');
+  };
 
   const openSimplePopup = (className: string) => {
     setSelectedClass(className);
