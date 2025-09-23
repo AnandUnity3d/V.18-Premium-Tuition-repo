@@ -766,7 +766,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     Book Free Demo
                   </button>
                   <button
-                    onClick={() => openLearnMore('Class 11')}
+                    onClick={() => setIsBookingModalOpen('Class 11')}
                     className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center"
                   >
                     Apply Now
