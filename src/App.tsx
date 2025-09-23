@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building } from 'lucide-react';
+import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, User, Calendar, GraduationCap } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
 import classroomImage from './bb.png';
@@ -798,25 +798,105 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 name: 'Jamkhandi',
                 address: 'Main Road, Jamkhandi',
                 phone: '+91 98765 43210',
-                status: 'Open'
+                status: 'Open',
+                teachers: [
+                  {
+                    name: 'Dr. Rajesh Kumar',
+                    subject: 'Mathematics',
+                    experience: '12 years',
+                    qualification: 'M.Sc Mathematics, B.Ed'
+                  },
+                  {
+                    name: 'Prof. Sunita Sharma',
+                    subject: 'Science',
+                    experience: '10 years',
+                    qualification: 'M.Sc Physics, B.Ed'
+                  },
+                  {
+                    name: 'Ms. Priya Reddy',
+                    subject: 'English',
+                    experience: '8 years',
+                    qualification: 'M.A English Literature, B.Ed'
+                  }
+                ]
               },
               {
                 name: 'Athani',
                 address: 'Education Street, Athani',
                 phone: '+91 98765 43211',
-                status: 'Coming Soon'
+                status: 'Coming Soon',
+                teachers: [
+                  {
+                    name: 'Mr. Arun Patil',
+                    subject: 'Mathematics',
+                    experience: '15 years',
+                    qualification: 'M.Sc Mathematics, M.Ed'
+                  },
+                  {
+                    name: 'Dr. Kavitha Nair',
+                    subject: 'Science',
+                    experience: '11 years',
+                    qualification: 'Ph.D Chemistry, B.Ed'
+                  },
+                  {
+                    name: 'Ms. Deepa Singh',
+                    subject: 'English',
+                    experience: '9 years',
+                    qualification: 'M.A English, TESOL Certified'
+                  }
+                ]
               },
               {
                 name: 'Harugeri',
                 address: 'School Road, Harugeri',
                 phone: '+91 98765 43212',
-                status: 'Coming Soon'
+                status: 'Coming Soon',
+                teachers: [
+                  {
+                    name: 'Prof. Mahesh Joshi',
+                    subject: 'Mathematics',
+                    experience: '14 years',
+                    qualification: 'M.Sc Applied Mathematics, B.Ed'
+                  },
+                  {
+                    name: 'Dr. Rekha Desai',
+                    subject: 'Science',
+                    experience: '13 years',
+                    qualification: 'Ph.D Biology, M.Ed'
+                  },
+                  {
+                    name: 'Mr. Vikram Rao',
+                    subject: 'English',
+                    experience: '7 years',
+                    qualification: 'M.A English Literature, CELTA'
+                  }
+                ]
               },
               {
                 name: 'Badami',
                 address: 'Heritage Lane, Badami',
                 phone: '+91 98765 43213',
-                status: 'Coming Soon'
+                status: 'Coming Soon',
+                teachers: [
+                  {
+                    name: 'Ms. Anita Kulkarni',
+                    subject: 'Mathematics',
+                    experience: '16 years',
+                    qualification: 'M.Sc Statistics, M.Ed'
+                  },
+                  {
+                    name: 'Prof. Suresh Gowda',
+                    subject: 'Science',
+                    experience: '12 years',
+                    qualification: 'M.Sc Physics, Ph.D (pursuing)'
+                  },
+                  {
+                    name: 'Dr. Meera Iyer',
+                    subject: 'English',
+                    experience: '10 years',
+                    qualification: 'Ph.D English Literature, B.Ed'
+                  }
+                ]
               }
             ].map((branch, index) => (
               <div 
