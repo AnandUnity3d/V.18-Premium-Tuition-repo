@@ -579,7 +579,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   </div>
                 </div>
                 <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
-                  Learn More
+                 Coming Soon
                 </button>
               </div>
             </div>
@@ -610,7 +610,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   </div>
                 </div>
                 <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium">
-                  Learn More
+                   Coming Soon
                 </button>
               </div>
             </div>
