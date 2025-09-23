@@ -1312,7 +1312,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                           <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <div>
                             <h4 className="font-medium text-gray-900">Dr. Priya Sharma</h4>
-                            <p className="text-sm text-gray-600">Mathematics & Physics Specialist</p>
+                            <p className="text-sm text-gray-600">Mathematics</p>
                             <p className="text-xs text-gray-500">15+ years experience, IIT graduate</p>
                           </div>
                         </div>
@@ -1321,7 +1321,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                           <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <div>
                             <h4 className="font-medium text-gray-900">Prof. Rajesh Kumar</h4>
-                            <p className="text-sm text-gray-600">Chemistry & Biology Expert</p>
+                            <p className="text-sm text-gray-600">Science</p>
                             <p className="text-xs text-gray-500">12+ years experience, Gold medalist</p>
                           </div>
                         </div>
@@ -1330,7 +1330,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                           <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <div>
                             <h4 className="font-medium text-gray-900">Ms. Anita Reddy</h4>
-                            <p className="text-sm text-gray-600">English & Social Studies</p>
+                            <p className="text-sm text-gray-600">English</p>
                             <p className="text-xs text-gray-500">10+ years experience, M.Ed qualified</p>
                           </div>
                         </div>
