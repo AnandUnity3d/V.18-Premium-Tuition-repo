@@ -9,6 +9,7 @@ interface BookingModalProps {
 }
 
 export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     studentName: '',
     parentName: '',
@@ -22,6 +23,10 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (isSubmitting) return;
+    
+    setIsSubmitting(true);
     
     // Prepare email template parameters
     const templateParams = {
@@ -58,10 +63,20 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
         preferredDate: '',
         preferredTime: ''
       });
+      
+      // Re-enable button after 5 seconds
+      setTimeout(() => {
+        setIsSubmitting(false);
+      }, 5000);
     })
     .catch((error) => {
       console.error('Failed to send email:', error);
       alert('Sorry, there was an error sending your request. Please try again or contact us directly.');
+      
+      // Re-enable button after 5 seconds even on error
+      setTimeout(() => {
+        setIsSubmitting(false);
+      }, 5000);
     });
   };
 
@@ -243,9 +258,14 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               </button>
               <button
                 type="submit"
-                className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
+                disabled={isSubmitting}
+                className={`flex-1 px-4 py-2 rounded-lg transition-colors text-sm sm:text-base ${
+                  isSubmitting 
+                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed' 
+                    : 'bg-blue-600 text-white hover:bg-blue-700'
+                }`}
               >
-                Book Demo
+                {isSubmitting ? 'Booking...' : 'Book Demo'}
               </button>
             </div>
           </form>
