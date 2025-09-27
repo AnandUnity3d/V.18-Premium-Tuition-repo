@@ -977,7 +977,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium flex items-center justify-center">
                   <Phone className="mr-2 h-4 w-4" />
-                  Call Us: +91 8123144616
+                  Call Us: +91 6362617198
                 </button>
                 <button onClick={() => setIsBookingModalOpen(true)} className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium">
                   Book Free Demo
