@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu, TrendingUp } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
-import InvestorPortfolio from './components/InvestorPortfolio';
 import classroomImage from './bb.png';
 import studentImage from './aa.jpg';
 import videoFile from './components/video.mp4';
