@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu } from 'lucide-react';
+import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu, TrendingUp } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
+import InvestorPortfolio from './components/InvestorPortfolio';
 import classroomImage from './bb.png';
 import studentImage from './aa.jpg';
 import videoFile from './components/video.mp4';
@@ -10,6 +11,7 @@ function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isLearnMoreOpen, setIsLearnMoreOpen] = useState(false);
   const [selectedClass, setSelectedClass] = useState('');
+  const [showInvestorPortfolio, setShowInvestorPortfolio] = useState(false);
 
   const openLearnMore = (className: string) => {
     setSelectedClass(className);
@@ -55,6 +57,10 @@ function App() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
+  if (showInvestorPortfolio) {
+    return <InvestorPortfolio onBack={() => setShowInvestorPortfolio(false)} />;
+  }
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -71,6 +77,13 @@ function App() {
               <a href="#technology" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Technology</a>
               <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
               <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
+              <button 
+                onClick={() => setShowInvestorPortfolio(true)}
+                className="flex items-center text-gray-600 hover:text-orange-500 font-medium transition-colors"
+              >
+                <TrendingUp className="w-4 h-4 mr-1" />
+                Investors
+              </button>
             </nav>
             <button
               onClick={toggleMobileMenu}
@@ -119,6 +132,16 @@ function App() {
                 >
                   Contact
                 </a>
+                <button 
+                  onClick={() => {
+                    setShowInvestorPortfolio(true);
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="flex items-center w-full text-left text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
+                >
+                  <TrendingUp className="w-4 h-4 mr-2" />
+                  Investors
+                </button>
               </nav>
             </div>
           )}
@@ -977,7 +1000,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium flex items-center justify-center">
                   <Phone className="mr-2 h-4 w-4" />
-                  Call Us: +91 8123144616
+                  Call Us: +91 6362617198
                 </button>
                 <button onClick={() => setIsBookingModalOpen(true)} className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium">
                   Book Free Demo
@@ -1033,7 +1056,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                   <Mail className="h-6 w-6 text-orange-500 mr-3 mt-1" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-gray-300">v18premiumtuition@gmail.com</p>
+                    <p className="text-gray-300">admin@v18premiumtuition.com</p>
                   </div>
                 </div>
               </div>
