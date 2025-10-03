@@ -10,6 +10,7 @@ interface BookingModalProps {
 
 export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [minDate, setMinDate] = useState('');
   const [formData, setFormData] = useState({
     studentName: '',
     parentName: '',
@@ -20,6 +21,16 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
     preferredDate: '',
     preferredTime: ''
   });
+
+  // Set minimum date to today when component mounts
+  React.useEffect(() => {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    const todayString = `${year}-${month}-${day}`;
+    setMinDate(todayString);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -219,7 +230,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 value={formData.preferredDate}
                 onChange={handleChange}
                 required
-                min={new Date().toISOString().split('T')[0]}
+                min={minDate}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
               />
             </div>
