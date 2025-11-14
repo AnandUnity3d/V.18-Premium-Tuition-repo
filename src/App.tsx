@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
+import TeachersPage from './components/TeachersPage';
 import classroomImage from './bb.png';
 import studentImage from './aa.jpg';
 import videoFile from './components/video.mp4';
@@ -10,6 +11,7 @@ function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isLearnMoreOpen, setIsLearnMoreOpen] = useState(false);
   const [selectedClass, setSelectedClass] = useState('');
+  const [isTeachersPageOpen, setIsTeachersPageOpen] = useState(false);
 
   const openLearnMore = (className: string) => {
     setSelectedClass(className);
@@ -69,6 +71,7 @@ function App() {
               <a href="#about" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">About</a>
               <a href="#programs" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Programs</a>
               <a href="#technology" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Technology</a>
+              <button onClick={() => setIsTeachersPageOpen(true)} className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Teachers</button>
               <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
               <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
             </nav>
@@ -84,36 +87,42 @@ function App() {
           {isMobileMenuOpen && (
             <div className="md:hidden bg-white border-t border-gray-200">
               <nav className="px-4 py-4 space-y-3">
-                <a 
-                  href="#about" 
+                <a
+                  href="#about"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
                   About
                 </a>
-                <a 
-                  href="#programs" 
+                <a
+                  href="#programs"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
                   Programs
                 </a>
-                <a 
-                  href="#technology" 
+                <a
+                  href="#technology"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
                   Technology
                 </a>
-                <a 
-                  href="#admissions" 
+                <button
+                  onClick={() => { closeMobileMenu(); setIsTeachersPageOpen(true); }}
+                  className="block w-full text-left text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
+                >
+                  Teachers
+                </button>
+                <a
+                  href="#admissions"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
                   Admissions
                 </a>
-                <a 
-                  href="#contact" 
+                <a
+                  href="#contact"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
@@ -857,7 +866,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 name: 'Harugeri',
                 address: 'School Road, Harugeri',
                 phone: '+91 98765 43212',
-                status: 'Coming Soon'
+                status: 'Open'
               },
               {
                 name: 'Badami',
@@ -1089,13 +1098,17 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
       </footer>
 
       {/* Booking Modal */}
-      <BookingModal 
-        isOpen={isBookingModalOpen} 
-        onClose={() => setIsBookingModalOpen(false)} 
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
       />
-      <VideoModal 
-        isOpen={isVideoModalOpen} 
-        onClose={() => setIsVideoModalOpen(false)} 
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+      />
+      <TeachersPage
+        isOpen={isTeachersPageOpen}
+        onClose={() => setIsTeachersPageOpen(false)}
       />
 
       {/* Admissions Popup */}
@@ -1135,7 +1148,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     name: 'Harugeri',
                     address: 'School Road, Harugeri',
                     phone: '+91 98765 43212',
-                    status: 'Coming Soon'
+                    status: 'Open'
                   },
                   {
                     name: 'Badami',
@@ -1318,81 +1331,19 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               </div>
               
               <div className="space-y-4">
-                {/* <div className="flex items-center">
-                  <MapPin className="w-5 h-5 text-blue-600 mr-3" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Address</p>
-                    <p className="text-gray-600">{selectedBranch.address}</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Phone</p>
-                    <p className="text-gray-600">{selectedBranch.phone}</p>
-                  </div>
-                </div> 
-                
-                <div className="flex items-center">
-                  <Clock className="w-5 h-5 text-blue-600 mr-3" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Status</p>
-                    <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
-                      selectedBranch.status === 'Open' 
-                        ? 'bg-green-100 text-green-800' 
-                        : 'bg-yellow-100 text-yellow-800'
-                    }`}>
-                      {selectedBranch.status}
-                    </span>
-                  </div>
-                </div> */}
-                
                 {selectedBranch.status === 'Open' && (
-                  <div className="space-y-4">
-                    <div className="bg-blue-50 p-4 rounded-lg">
-                      <h3 className="font-semibold text-gray-900 mb-2">Operating Hours</h3>
-                      <p className="text-gray-600">Monday - Saturday: 9:00 AM - 8:00 PM</p>
-                      <p className="text-gray-600">Sunday: 10:00 AM - 6:00 PM</p>
-                    </div>
-                    
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <h3 className="font-semibold text-gray-900 mb-3">Our Expert Teachers</h3>
-                      <div className="space-y-3">
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <div>
-                            <h4 className="font-medium text-gray-900">Dr. Priya Sharma</h4>
-                            <p className="text-sm text-gray-600">Mathematics</p>
-                            <p className="text-xs text-gray-500">15+ years experience, IIT graduate</p>
-                          </div>
-                        </div>
-                        
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <div>
-                            <h4 className="font-medium text-gray-900">Prof. Rajesh Kumar</h4>
-                            <p className="text-sm text-gray-600">Science</p>
-                            <p className="text-xs text-gray-500">12+ years experience, Gold medalist</p>
-                          </div>
-                        </div>
-                        
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <div>
-                            <h4 className="font-medium text-gray-900">Ms. Anita Reddy</h4>
-                            <p className="text-sm text-gray-600">English</p>
-                            <p className="text-xs text-gray-500">10+ years experience, M.Ed qualified</p>
-                          </div>
-                        </div>
-                      </div>
+                  <div className="bg-blue-50 p-6 rounded-lg">
+                    <h3 className="font-semibold text-gray-900 mb-3 text-lg">Operating Hours</h3>
+                    <div className="space-y-2">
+                      <p className="text-gray-600 text-base">Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                      <p className="text-gray-600 text-base">Sunday: 10:00 AM - 6:00 PM</p>
                     </div>
                   </div>
                 )}
-                
+
                 {selectedBranch.status === 'Coming Soon' && (
-                  <div className="bg-yellow-50 p-4 rounded-lg">
-                    <h3 className="font-semibold text-gray-900 mb-2">Opening Soon</h3>
+                  <div className="bg-yellow-50 p-6 rounded-lg">
+                    <h3 className="font-semibold text-gray-900 mb-2 text-lg">Opening Soon</h3>
                     <p className="text-gray-600">We're working hard to bring quality education to {selectedBranch.name}. Stay tuned for updates!</p>
                   </div>
                 )}
