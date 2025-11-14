@@ -1,5 +1,5 @@
-import React from 'react';
-import { X, GraduationCap, Award, BookOpen, Users, Star } from 'lucide-react';
+import React, { useState } from 'react';
+import { X, GraduationCap, Award, BookOpen, Users, Star, MapPin } from 'lucide-react';
 
 interface TeachersPageProps {
   isOpen: boolean;
@@ -7,6 +7,8 @@ interface TeachersPageProps {
 }
 
 export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
+  const [selectedBranch, setSelectedBranch] = useState<string>('All');
+
   if (!isOpen) return null;
 
   const teachers = [
@@ -21,7 +23,8 @@ export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
         'Gold medalist in M.Sc Mathematics',
         '98% student success rate'
       ],
-      image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400',
+      branch: 'Jamkhandi'
     },
     {
       name: 'Prof. Rajesh Kumar',
@@ -34,7 +37,8 @@ export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
         'Published research papers in science education',
         'Expert in 3D visualization teaching'
       ],
-      image: 'https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=400',
+      branch: 'Jamkhandi'
     },
     {
       name: 'Ms. Anita Reddy',
@@ -47,7 +51,8 @@ export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
         'Helped 200+ students improve communication',
         'Specialized in exam-focused English'
       ],
-      image: 'https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400',
+      branch: 'Harugeri'
     },
     {
       name: 'Mr. Suresh Patil',
@@ -60,9 +65,15 @@ export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
         'Conducted 100+ interactive lab sessions',
         'Passionate about making biology fun'
       ],
-      image: 'https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=400',
+      branch: 'Harugeri'
     }
   ];
+
+  const branches = ['All', 'Jamkhandi', 'Harugeri'];
+  const filteredTeachers = selectedBranch === 'All'
+    ? teachers
+    : teachers.filter(teacher => teacher.branch === selectedBranch);
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-y-auto">
@@ -84,6 +95,28 @@ export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
         </div>
 
         <div className="p-6">
+          <div className="mb-6">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-bold text-gray-900">Filter by Branch</h3>
+              <span className="text-sm text-gray-600">{filteredTeachers.length} {filteredTeachers.length === 1 ? 'teacher' : 'teachers'} found</span>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {branches.map((branch) => (
+                <button
+                  key={branch}
+                  onClick={() => setSelectedBranch(branch)}
+                  className={`px-4 py-2 rounded-lg font-medium transition-all ${
+                    selectedBranch === branch
+                      ? 'bg-orange-500 text-white shadow-md'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  {branch}
+                </button>
+              ))}
+            </div>
+          </div>
+
           <div className="mb-8 bg-gradient-to-r from-blue-50 to-orange-50 rounded-xl p-6">
             <h3 className="text-xl font-bold text-gray-900 mb-3">Why Our Teachers Stand Out</h3>
             <div className="grid md:grid-cols-3 gap-4">
@@ -112,7 +145,7 @@ export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
           </div>
 
           <div className="space-y-6">
-            {teachers.map((teacher, index) => (
+            {filteredTeachers.map((teacher, index) => (
               <div
                 key={index}
                 className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
@@ -130,6 +163,10 @@ export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
                       <div>
                         <h3 className="text-2xl font-bold text-gray-900 mb-1">{teacher.name}</h3>
                         <p className="text-orange-600 font-semibold text-lg">{teacher.subject}</p>
+                        <div className="flex items-center mt-2 text-gray-600">
+                          <MapPin className="w-4 h-4 mr-1" />
+                          <span className="text-sm font-medium">{teacher.branch} Branch</span>
+                        </div>
                       </div>
                       <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
                         {teacher.experience}
