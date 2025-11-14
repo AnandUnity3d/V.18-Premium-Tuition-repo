@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu } from 'lucide-react';
 import BookingModal from './components/BookingModal';
 import VideoModal from './components/VideoModal';
+import TeachersPage from './components/TeachersPage';
 import classroomImage from './bb.png';
 import studentImage from './aa.jpg';
 import videoFile from './components/video.mp4';
@@ -10,6 +11,7 @@ function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isLearnMoreOpen, setIsLearnMoreOpen] = useState(false);
   const [selectedClass, setSelectedClass] = useState('');
+  const [isTeachersPageOpen, setIsTeachersPageOpen] = useState(false);
 
   const openLearnMore = (className: string) => {
     setSelectedClass(className);
@@ -69,6 +71,7 @@ function App() {
               <a href="#about" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">About</a>
               <a href="#programs" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Programs</a>
               <a href="#technology" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Technology</a>
+              <button onClick={() => setIsTeachersPageOpen(true)} className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Teachers</button>
               <a href="#admissions" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Admissions</a>
               <a href="#contact" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Contact</a>
             </nav>
@@ -84,36 +87,42 @@ function App() {
           {isMobileMenuOpen && (
             <div className="md:hidden bg-white border-t border-gray-200">
               <nav className="px-4 py-4 space-y-3">
-                <a 
-                  href="#about" 
+                <a
+                  href="#about"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
                   About
                 </a>
-                <a 
-                  href="#programs" 
+                <a
+                  href="#programs"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
                   Programs
                 </a>
-                <a 
-                  href="#technology" 
+                <a
+                  href="#technology"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
                   Technology
                 </a>
-                <a 
-                  href="#admissions" 
+                <button
+                  onClick={() => { closeMobileMenu(); setIsTeachersPageOpen(true); }}
+                  className="block w-full text-left text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
+                >
+                  Teachers
+                </button>
+                <a
+                  href="#admissions"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
                   Admissions
                 </a>
-                <a 
-                  href="#contact" 
+                <a
+                  href="#contact"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 hover:text-orange-500 font-medium transition-colors py-2"
                 >
@@ -1089,13 +1098,17 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
       </footer>
 
       {/* Booking Modal */}
-      <BookingModal 
-        isOpen={isBookingModalOpen} 
-        onClose={() => setIsBookingModalOpen(false)} 
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
       />
-      <VideoModal 
-        isOpen={isVideoModalOpen} 
-        onClose={() => setIsVideoModalOpen(false)} 
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+      />
+      <TeachersPage
+        isOpen={isTeachersPageOpen}
+        onClose={() => setIsTeachersPageOpen(false)}
       />
 
       {/* Admissions Popup */}
