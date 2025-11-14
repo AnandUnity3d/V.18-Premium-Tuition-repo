@@ -866,7 +866,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                 name: 'Harugeri',
                 address: 'School Road, Harugeri',
                 phone: '+91 98765 43212',
-                status: 'Coming Soon'
+                status: 'Open'
               },
               {
                 name: 'Badami',
@@ -1148,7 +1148,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
                     name: 'Harugeri',
                     address: 'School Road, Harugeri',
                     phone: '+91 98765 43212',
-                    status: 'Coming Soon'
+                    status: 'Open'
                   },
                   {
                     name: 'Badami',
