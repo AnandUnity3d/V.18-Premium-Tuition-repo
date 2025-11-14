@@ -28,10 +28,10 @@ export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
     },
     {
       name: 'Prof. Rajesh Kumar',
-      subject: 'Physics & Chemistry',
+      subject: 'Science',
       experience: '12+ years',
       qualification: 'M.Sc in Physics, B.Ed',
-      specialization: 'Experimental Physics, Organic Chemistry, Lab Work',
+      specialization: 'Physics, Chemistry, Biology with AR/VR',
       achievements: [
         'Former professor at prestigious college',
         'Published research papers in science education',
@@ -42,7 +42,7 @@ export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
     },
     {
       name: 'Ms. Anita Reddy',
-      subject: 'English & Communication',
+      subject: 'English',
       experience: '10+ years',
       qualification: 'M.A. in English, M.Ed',
       specialization: 'Grammar, Literature, Communication Skills',
@@ -52,20 +52,48 @@ export default function TeachersPage({ isOpen, onClose }: TeachersPageProps) {
         'Specialized in exam-focused English'
       ],
       image: 'https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400',
+      branch: 'Jamkhandi'
+    },
+    {
+      name: 'Mr. Vikram Patil',
+      subject: 'Mathematics',
+      experience: '12+ years',
+      qualification: 'M.Sc in Mathematics, B.Ed',
+      specialization: 'Algebra, Geometry, Applied Mathematics',
+      achievements: [
+        'Helped 300+ students excel in board exams',
+        'District level mathematics coordinator',
+        'Expert in concept-based learning'
+      ],
+      image: 'https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=400',
       branch: 'Harugeri'
     },
     {
-      name: 'Mr. Suresh Patil',
-      subject: 'Biology',
-      experience: '8+ years',
-      qualification: 'M.Sc in Biotechnology',
-      specialization: 'Human Anatomy, Botany, Zoology',
+      name: 'Dr. Sunita Desai',
+      subject: 'Science',
+      experience: '14+ years',
+      qualification: 'Ph.D. in Biotechnology',
+      specialization: 'Biology, Chemistry, Environmental Science',
       achievements: [
-        'Expert in AR/VR biology teaching',
-        'Conducted 100+ interactive lab sessions',
-        'Passionate about making biology fun'
+        'Research background in life sciences',
+        'Conducted 150+ lab experiments with students',
+        'Passionate about hands-on science learning'
       ],
-      image: 'https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=400',
+      branch: 'Harugeri'
+    },
+    {
+      name: 'Mr. Anil Kumar',
+      subject: 'English',
+      experience: '9+ years',
+      qualification: 'M.A. in English Literature',
+      specialization: 'Written Communication, Grammar, Poetry',
+      achievements: [
+        'Trained students for state-level competitions',
+        'Published articles on effective English teaching',
+        'Focus on practical communication skills'
+      ],
+      image: 'https://images.pexels.com/photos/3771074/pexels-photo-3771074.jpeg?auto=compress&cs=tinysrgb&w=400',
       branch: 'Harugeri'
     }
   ];
