@@ -1331,81 +1331,19 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
               </div>
               
               <div className="space-y-4">
-                {/* <div className="flex items-center">
-                  <MapPin className="w-5 h-5 text-blue-600 mr-3" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Address</p>
-                    <p className="text-gray-600">{selectedBranch.address}</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Phone</p>
-                    <p className="text-gray-600">{selectedBranch.phone}</p>
-                  </div>
-                </div> 
-                
-                <div className="flex items-center">
-                  <Clock className="w-5 h-5 text-blue-600 mr-3" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Status</p>
-                    <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
-                      selectedBranch.status === 'Open' 
-                        ? 'bg-green-100 text-green-800' 
-                        : 'bg-yellow-100 text-yellow-800'
-                    }`}>
-                      {selectedBranch.status}
-                    </span>
-                  </div>
-                </div> */}
-                
                 {selectedBranch.status === 'Open' && (
-                  <div className="space-y-4">
-                    <div className="bg-blue-50 p-4 rounded-lg">
-                      <h3 className="font-semibold text-gray-900 mb-2">Operating Hours</h3>
-                      <p className="text-gray-600">Monday - Saturday: 9:00 AM - 8:00 PM</p>
-                      <p className="text-gray-600">Sunday: 10:00 AM - 6:00 PM</p>
-                    </div>
-                    
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <h3 className="font-semibold text-gray-900 mb-3">Our Expert Teachers</h3>
-                      <div className="space-y-3">
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <div>
-                            <h4 className="font-medium text-gray-900">Dr. Priya Sharma</h4>
-                            <p className="text-sm text-gray-600">Mathematics</p>
-                            <p className="text-xs text-gray-500">15+ years experience, IIT graduate</p>
-                          </div>
-                        </div>
-                        
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <div>
-                            <h4 className="font-medium text-gray-900">Prof. Rajesh Kumar</h4>
-                            <p className="text-sm text-gray-600">Science</p>
-                            <p className="text-xs text-gray-500">12+ years experience, Gold medalist</p>
-                          </div>
-                        </div>
-                        
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <div>
-                            <h4 className="font-medium text-gray-900">Ms. Anita Reddy</h4>
-                            <p className="text-sm text-gray-600">English</p>
-                            <p className="text-xs text-gray-500">10+ years experience, M.Ed qualified</p>
-                          </div>
-                        </div>
-                      </div>
+                  <div className="bg-blue-50 p-6 rounded-lg">
+                    <h3 className="font-semibold text-gray-900 mb-3 text-lg">Operating Hours</h3>
+                    <div className="space-y-2">
+                      <p className="text-gray-600 text-base">Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                      <p className="text-gray-600 text-base">Sunday: 10:00 AM - 6:00 PM</p>
                     </div>
                   </div>
                 )}
-                
+
                 {selectedBranch.status === 'Coming Soon' && (
-                  <div className="bg-yellow-50 p-4 rounded-lg">
-                    <h3 className="font-semibold text-gray-900 mb-2">Opening Soon</h3>
+                  <div className="bg-yellow-50 p-6 rounded-lg">
+                    <h3 className="font-semibold text-gray-900 mb-2 text-lg">Opening Soon</h3>
                     <p className="text-gray-600">We're working hard to bring quality education to {selectedBranch.name}. Stay tuned for updates!</p>
                   </div>
                 )}
