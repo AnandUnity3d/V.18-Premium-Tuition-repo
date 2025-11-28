@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, GraduationCap, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu } from 'lucide-react';
+import { Play, BookOpen, Users, Award, Star, Phone, Mail, MapPin, Clock, CheckCircle, X, Brain, Smartphone, ArrowRight, Atom, Heart, Zap, Eye, Building, Menu } from 'lucide-react';
 import BookingModal from './components/BookingModal';
+import logo from './public/v.18-logo-blue.jpeg';
 import VideoModal from './components/VideoModal';
 import TeachersPage from './components/TeachersPage';
 import classroomImage from './bb.png';
@@ -64,8 +65,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <GraduationCap className="h-8 w-8 text-orange-500" />
-              <span className="ml-2 text-xl font-bold text-gray-900">V.18 Premium Tuition</span>
+              <img src={logo} alt="V.18 Premium Tuition" className="h-12 w-auto" />
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">About</a>
@@ -1205,7 +1205,7 @@ Designed for students of all classes are fully based on State Board, CBSE and IC
           <div className="bg-white rounded-xl max-w-md w-full p-6">
             <div className="flex justify-between items-center mb-4">
               <div className="flex items-center">
-                <GraduationCap className="w-6 h-6 text-blue-600 mr-2" />
+                <img src={logo} alt="V.18 Logo" className="w-8 h-8 mr-2" />
                 <h2 className="text-xl font-bold text-gray-900">{selectedClass} Information</h2>
               </div>
               <button
