@@ -83,7 +83,7 @@ function App() {
             </button>
           </div>
           
-          {/* Mobile Menu */}
+          {/* Mobile Menu options */}
           {isMobileMenuOpen && (
             <div className="md:hidden bg-white border-t border-gray-200">
               <nav className="px-4 py-4 space-y-3">
