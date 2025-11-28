@@ -65,7 +65,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <img src={logo} alt="V.18 Premium Tuition" className="h-18 w-auto" />
+              <img src={logo} alt="V.18 Premium Tuition" className="h-16 w-auto" />
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">About</a>
@@ -83,7 +83,7 @@ function App() {
             </button>
           </div>
           
-          {/* Mobile Menu */}
+          {/* Mobile Menu options */}
           {isMobileMenuOpen && (
             <div className="md:hidden bg-white border-t border-gray-200">
               <nav className="px-4 py-4 space-y-3">
